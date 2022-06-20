@@ -16,7 +16,7 @@ import {Observable}                 from "rxjs";
 import 'rxjs/add/operator/map';
 import { from }                     from 'rxjs';
 
-import {WhereFilterOp}              from "firebase/firestore"
+import {WhereFilterOp}              from "@firebase/firestore-types"
 
 import {kw}                         from "@kw/kw";
 import {kwAct}                      from "@kwClass/act/kwAct";
