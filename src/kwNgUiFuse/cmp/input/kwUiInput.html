@@ -1,0 +1,24 @@
+<div *ngIf="view"
+     [class]="sStyl"
+     [id]="sId">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    <mat-form-field>
+
+        {{sText}}
+
+        <mat-icon>
+            {{sIcon}}
+        </mat-icon>
+
+        <input matInput
+               [placeholder]="sPlaceHolder"
+               (changed)="onChanged($event)"/>
+
+    </mat-form-field>
+
+</div>
+

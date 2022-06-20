@@ -1,0 +1,25 @@
+/**********************************************************************
+*
+* kwNgUiFuse/toolbar/kwUiToolbar.scss
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+
+@import "src/@fuse/scss/fuse";
+
+
+.mat-toolbar {
+    flex: 1 0 auto;
+    min-height: initial;
+}
+
+.toolbar-bottom {
+    height: auto;
+}
+

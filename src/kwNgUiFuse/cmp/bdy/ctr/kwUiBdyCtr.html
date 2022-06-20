@@ -1,0 +1,36 @@
+<div *ngIf="view"
+     [class]="sStyl"
+     [id]="sId">
+
+    <div>{{sComp}}</div>
+
+    {{sText}}
+
+    <kw-ui-frm
+        *ngIf="form"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-frm>
+
+    <kw-ui-router
+        *ngIf="router"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-router>
+
+    <kw-ui-rows
+        *ngIf="rows"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-rows>
+
+</div>

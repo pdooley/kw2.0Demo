@@ -1,0 +1,45 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/btns/kwUiListBtns.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+<div *ngIf="view"
+     [class]="sStyl"    >
+
+    <div>{{sComp}}</div>
+
+    <ng-container matColumnDef="buttons">
+
+        <mat-header-cell *matHeaderCellDef>
+
+        </mat-header-cell>
+
+        <mat-cell *matCellDef="let contact">
+
+            <div fxFlex="row" fxLayoutAlign="end center">
+
+                <kw-ui-list-btns-btn
+                    *ngFor="let btn of btns"
+                    (changed)="onChanged($event)"
+                    [dataIn]="data"
+                    [initsIn]="inits"
+                    [viewIn]="btn"  >
+
+                </kw-ui-list-btns-btn>
+
+            </div>
+
+        </mat-cell>
+
+    </ng-container>
+
+</div>

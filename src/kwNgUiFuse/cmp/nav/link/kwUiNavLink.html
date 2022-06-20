@@ -1,0 +1,40 @@
+<mat-list-item
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId"
+    matRipple
+    [routerLink]="sLink"
+    routerLinkActive="active">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    {{sText}}
+
+    <kw-ui-img
+        *ngIf="img"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-img>
+
+    <kw-ui-title
+        *ngIf="title"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-title>
+
+</mat-list-item>
+
+<!--
+<mat-list-item matRipple [routerNavLink]="['activity']" routerNavLinkActive="active">
+    <mat-icon matListIcon>matter</mat-icon>
+    <div matLine [fxHide]="responsive" [fxShow.gt-sm]="responsive">Activity</div>
+</mat-list-item>
+-->

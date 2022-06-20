@@ -1,0 +1,26 @@
+<div
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    {{sText}}
+
+    <mat-select
+        [value]="sSort"
+        [placeholder]="sPlaceHolder">
+
+        <mat-option
+            *ngFor="let opt of opts"
+            [value]="opt.nId">
+
+            {{opt.sName}}
+
+        </mat-option>
+
+    </mat-select>
+
+</div>

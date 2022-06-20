@@ -1,0 +1,5423 @@
+[
+  {
+    "sId": "billings",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "billing",
+                "sStateSt": "billings",
+                "sText": "Search for Billing",
+                "btn": {
+                  "title": {
+                    "sText": "Companies"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Companies"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected time sheets?",
+            "sState": "billing",
+            "sStateSt": "billing"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "billing",
+                "sStateSt": "billing",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "billing",
+            "sStateSt": "billing",
+            "sText": "Add billing"
+          },
+          "dlg": {
+            "sState": "billing",
+            "sStateSt": "billing",
+            "formDlg": {
+              "sState": "billing",
+              "sStateSt": "billing",
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "phone",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "lock",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "billing",
+                    "sStateSt": "billing"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "billing",
+                    "sStateSt": "billing"
+                  }
+                ]
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Billing",
+                        "sState": "billing",
+                        "sStateSt": "billing"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "companys",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "company",
+                "sStateSt": "companys",
+                "sText": "Search for Company",
+                "btn": {
+                  "title": {
+                    "sText": "Companies"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Companies"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected time sheets?",
+            "sState": "company",
+            "sStateSt": "company"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "company",
+                "sStateSt": "company",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "company",
+            "sStateSt": "company",
+            "sText": "Add company"
+          },
+          "dlg": {
+            "sState": "company",
+            "sStateSt": "company",
+            "formDlg": {
+              "sState": "company",
+              "sStateSt": "company",
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "phone",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "lock",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "company",
+                    "sStateSt": "company"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "company",
+                    "sStateSt": "company"
+                  }
+                ]
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Company",
+                        "sState": "company",
+                        "sStateSt": "company"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "employees",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "lastName",
+                "sState": "employee",
+                "sStateSt": "employees",
+                "sText": "Search for Employee",
+                "btn": {
+                  "sState": "employee",
+                  "title": {
+                    "sText": "Employees"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Employees"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected employees?",
+            "sState": "employee",
+            "sStateSt": "employee"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "employee",
+                "sStateSt": "employee",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Id",
+                    "sField": "data.id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "First Name",
+                    "sField": "data.firstName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Last Name",
+                    "sField": "data.lastName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Address",
+                    "sField": "data.address"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "City",
+                    "sField": "data.city"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Postal Code",
+                    "sField": "data.postalCode"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Province",
+                    "sField": "data.province"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #1",
+                    "sField": "data.phoneNumber1"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #2",
+                    "sField": "data.phoneNumber2"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company",
+                    "sField": "data.company"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job",
+                    "sField": "data.job"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "employee",
+            "sText": "Add Employee"
+          },
+          "dlg": {
+            "sState": "employees",
+            "formDlg": {
+              "sState": "employee",
+              "sStateSt": "employee",
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "num": {
+                          "sText": "Id",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "id"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "First Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "firstName"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Last Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "lastName"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Address",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "address"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "City",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "city"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Province",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "province",
+                          "bIsReadOnly": false,
+                          "sStateSt": "provinces"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Postal Code",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "postalCode"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Phone Number #1",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber1"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Phone Number #2",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber2"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Job",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "job",
+                          "bIsReadOnly": false,
+                          "sStateSt": "jobs"
+                        }
+                      }
+                    }
+                  ],
+                  "opts": {
+                    "bEnableSort": true,
+                    "bEnableFltr": true,
+                    "bEnableRowSel": true
+                  }
+                }
+              },
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "employee",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "employee",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "employee",
+                        "sText": "Employee"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "emplFulls",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "lastName",
+                "sState": "emplFulls",
+                "sStateSt": "employees",
+                "sText": "Search for Employee",
+                "btn": {
+                  "title": {
+                    "sText": "Employees Full"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Employees Full"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected employees?",
+            "sState": "emplFulls",
+            "sStateSt": "employees"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "emplFulls",
+                "sStateSt": "employees",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Id",
+                    "sField": "data.id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "First Name",
+                    "sField": "data.firstName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Last Name",
+                    "sField": "data.lastName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Address",
+                    "sField": "data.address"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "City",
+                    "sField": "data.city"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Postal Code",
+                    "sField": "data.postalCode"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Province",
+                    "sField": "data.val.province.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #1",
+                    "sField": "data.phoneNumber1"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #2",
+                    "sField": "data.phoneNumber2"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company",
+                    "sField": "data.val.company.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job",
+                    "sField": "data.val.job.name"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "emplFulls",
+            "sText": "Add Employee"
+          },
+          "dlg": {
+            "sState": "emplFulls",
+            "formDlg": {
+              "sState": "emplFulls",
+              "sStateSt": "employee",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "emplFulls",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "emplFulls",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Id",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "id"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "First Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "firstName"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Last Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "lastName"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Address",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "address"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "City",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "city"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Province",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "province",
+                          "bIsReadOnly": false,
+                          "sStateSt": "provinces"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Postal Code",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "postalCode"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Phone Number #1",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber1"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Phone Number #2",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber2"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Job",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "job",
+                          "bIsReadOnly": false,
+                          "sStateSt": "jobs"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "emplFulls",
+                        "sText": "Employee Full"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "emplPro",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "lastName",
+                "sState": "emplPro",
+                "sStateSt": "employees",
+                "sText": "Search for Employee",
+                "btn": {
+                  "title": {
+                    "sText": "Employee Profiles"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Employee Profiles"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected employees?",
+            "sState": "emplPro",
+            "sStateSt": "employee"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "emplPro",
+                "sStateSt": "employee",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Last Name",
+                    "sField": "data.lastName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "First Name",
+                    "sField": "data.firstName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "ADDRESS",
+                    "sField": "data.address"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "City",
+                    "sField": "data.city"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Province",
+                    "sField": "data.val.province.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Postal Code",
+                    "sField": "data.postalCode"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #1",
+                    "sField": "data.phoneNumber1"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #2",
+                    "sField": "data.phoneNumber2"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company",
+                    "sField": "data.val.company.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job",
+                    "sField": "data.val.job.name"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "emplPro",
+            "sStateSt": "employee",
+            "sText": "Add Employee"
+          },
+          "dlg": {
+            "sState": "emplPro",
+            "formDlg": {
+              "sState": "emplPro",
+              "sStateSt": "employee",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "emplPro",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "emplPro",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "First Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "firstName",
+                          "bIsReadOnly": true
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Last Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "lastName",
+                          "bIsReadOnly": true
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "ADDRESS",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "address",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "City",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "city",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Province",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "province",
+                          "bIsReadOnly": false,
+                          "sStateSt": "provinces"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Postal Code",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "postalCode",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "phone": {
+                          "sText": "Phone Number #1",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber1",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "phone": {
+                          "sText": "Phone Number #2",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber2",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Schedule",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "job",
+                          "bIsReadOnly": false,
+                          "sStateSt": "jobs"
+                        }
+                      }
+                    }
+                  ],
+                  "opts": {
+                    "bEnableSort": true,
+                    "bEnableFltr": true,
+                    "bEnableRowSel": true
+                  }
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "emplPro",
+                        "sText": "Employee Profile"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "emplTimes",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "lastName",
+                "sState": "emplTimes",
+                "sStateSt": "employees",
+                "sText": "Search for Employee",
+                "btn": {
+                  "title": {
+                    "sText": "Employee Times"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Employee Times"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected employees?",
+            "sState": "emplTimes",
+            "sStateSt": "employee"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "emplTimes",
+                "sStateSt": "employee",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Last Name",
+                    "sField": "data.lastName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "First Name",
+                    "sField": "data.firstName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "ADDRESS",
+                    "sField": "data.address"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "City",
+                    "sField": "data.city"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Province",
+                    "sField": "data.val.province.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Postal Code",
+                    "sField": "data.postalCode"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #1",
+                    "sField": "data.phoneNumber1"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #2",
+                    "sField": "data.phoneNumber2"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company",
+                    "sField": "data.val.company.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job",
+                    "sField": "data.val.job.name"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "emplTimes",
+            "sStateSt": "employee",
+            "sText": "Add Employee"
+          },
+          "dlg": {
+            "sState": "emplTimes",
+            "formDlg": {
+              "sState": "emplTimes",
+              "sStateSt": "employee",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "emplPro",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "emplPro",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "First Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "firstName",
+                          "bIsReadOnly": true
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Last Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "lastName",
+                          "bIsReadOnly": true
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "ADDRESS",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "address",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "City",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "city",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Province",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "province",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Postal Code",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "postalCode",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "phone": {
+                          "sText": "Phone Number #1",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber1",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "phone": {
+                          "sText": "Phone Number #2",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber2",
+                          "bIsReadOnly": false
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Schedule",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "job",
+                          "bIsReadOnly": false,
+                          "sStateSt": "jobs"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "emplTimes",
+                        "sText": "Employee Profile"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "hourInp",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "date": {
+                "sParam": "start",
+                "sState": "hourInp",
+                "sStateSt": "timeSheets",
+                "sText": "Search for Time Sheets",
+                "btn": {
+                  "title": {
+                    "sText": "Hourly Input"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Hourly Input"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected employees?",
+            "sState": "hourInp",
+            "sStateSt": "timeSheets"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "hourInp",
+                "sStateSt": "timeSheets",
+                "cols": [
+                  {
+                    "sType": "str",
+                    "sText": "Employee Id",
+                    "sField": "data.val.employee.id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Last Name",
+                    "sField": "data.val.employee.lastName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "First Name",
+                    "sField": "data.val.employee.firstName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift",
+                    "sField": "data.val.job.val.schedule.val.shiftType.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job Description",
+                    "sField": "data.val.job.desc"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "M",
+                    "sField": "data.mon",
+                    "bReadOnly": false,
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "T",
+                    "sField": "data.tue",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "W",
+                    "sField": "data.wed",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "T",
+                    "sField": "data.thu",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "F",
+                    "sField": "data.fri",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "S",
+                    "sField": "data.sat",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "S",
+                    "sField": "data.sun",
+                    "sStateSt": "reason"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bFilter": true,
+                  "bEditable": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": false
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "hourInp",
+            "sStateSt": "employee",
+            "sText": "Add Employee"
+          },
+          "dlg": {
+            "sState": "hourInp",
+            "cellDlg": {
+              "sState": "hourInp",
+              "sStateSt": "timeSheet",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "hourInp",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  },
+                  {
+                    "sState": "hourInp",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "flds": [
+                    {
+                      "fld": {
+                        "hour": {
+                          "num": {
+                            "sIcon": "vpn_key",
+                            "bIsReadOnly": false,
+                            "sRecIdD": "hours",
+                            "sText": "Hours Worked"
+                          },
+                          "slct": {
+                            "sIcon": "vpn_key",
+                            "sRecIdD": "name",
+                            "sStateSt": "reasons",
+                            "sText": "Exception Code"
+                          },
+                          "str": {
+                            "sIcon": "vpn_key",
+                            "sRecIdD": "reason",
+                            "sText": "Reason"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "hourInp",
+                        "sText": "Hours"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "formDlg": {
+              "sState": "hourInp",
+              "sStateSt": "employee",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "hourInp",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  },
+                  {
+                    "sState": "hourInp",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "num": {
+                          "sText": "M",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "mon"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "ADDRESS",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "address"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "City",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "city"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Province",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "province"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Postal Code",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "postalCode"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "phone": {
+                          "sText": "Phone Number #1",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber1"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "phone": {
+                          "sText": "Phone Number #2",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber2"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "hourInp",
+                        "sText": "Employee Profile"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "job",
+    "view": {
+      "page": {
+        "form": {
+          "sState": "job",
+          "sStateSt": "job",
+          "content": {
+            "grp": {
+              "sRecIdD": "0",
+              "sState": "job",
+              "sStateSt": "job",
+              "flds": [
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Name",
+                      "sIcon": "phone",
+                      "sRecIdD": "name"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Desc",
+                      "sIcon": "phone",
+                      "sRecIdD": "desc"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Company",
+                      "sIcon": "phone",
+                      "sRecIdD": "company"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Schedule",
+                      "sIcon": "phone",
+                      "sRecIdD": "schedule"
+                    }
+                  }
+                }
+              ],
+              "defaultCol": {
+                "bResizable": true,
+                "bEditable": true,
+                "bFilter": true
+              },
+              "opts": {
+                "bEnableSort": true,
+                "bEnableFltr": true,
+                "bEnableRowSel": true
+              }
+            }
+          },
+          "actions": {
+            "btns": [
+              {
+                "sType": "cancel",
+                "sText": "Cancel",
+                "sState": "job",
+                "sStateSt": "job"
+              },
+              {
+                "sType": "ok",
+                "sText": "Ok",
+                "sState": "job",
+                "sStateSt": "job"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "jobFulls",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str":  {
+                "sParam": "desc",
+                "sState": "jobFulls",
+                "sStateSt": "jobs",
+                "sText": "Search for Job",
+                "btn": {
+                  "title": {
+                    "sText": "Jobs"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Job Fulls"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected jobs?",
+            "sState": "jobFulls",
+            "sStateSt": "jobs"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "jobFulls",
+                "sStateSt": "jobs",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company Name",
+                    "sField": "data.val.company.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company Desc",
+                    "sField": "data.val.company.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Schedule Name",
+                    "sField": "data.val.schedule.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Mon",
+                    "sField": "data.val.schedule.mon"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Tue",
+                    "sField": "data.val.schedule.tue"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Wed",
+                    "sField": "data.val.schedule.wed"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Thu",
+                    "sField": "data.val.schedule.thu"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Fri",
+                    "sField": "data.val.schedule.fri"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sat",
+                    "sField": "data.val.schedule.sat"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sun",
+                    "sField": "data.val.schedule.sun"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "jobFulls",
+            "sText": "Add Job"
+          },
+          "dlg": {
+            "sState": "jobFulls",
+            "sStateSt": "jobFulls",
+            "formDlg": {
+              "sState": "jobFulls",
+              "sStateSt": "job",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "jobFulls",
+                    "sStateSt": "job"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "job",
+                    "sStateSt": "job"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company.name",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Schedule",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company.schedule",
+                          "bIsReadOnly": false,
+                          "sStateSt": "schedules"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Job Full",
+                        "sState": "jobFulls",
+                        "sStateSt": "jobFulls"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "jobs",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "sParam": "desc",
+              "sState": "job",
+              "sStateSt": "jobs",
+              "sText": "Search for Job",
+              "btn": {
+                "title": {
+                  "sText": "Jobs"
+                }
+              }
+            },
+            "title": {
+              "sText": "Jobs"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected jobs?",
+            "sState": "job",
+            "sStateSt": "job"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "job",
+                "sStateSt": "job",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company",
+                    "sField": "data.company"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Schedule",
+                    "sField": "data.schedule"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "job",
+            "sStateSt": "job",
+            "sText": "Add Job"
+          },
+          "dlg": {
+            "sState": "job",
+            "sStateSt": "job",
+            "formDlg": {
+              "sState": "job",
+              "sStateSt": "job",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "job",
+                    "sStateSt": "job"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "job",
+                    "sStateSt": "job"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Schedule",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "schedule",
+                          "bIsReadOnly": false,
+                          "sStateSt": "schedules"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Job",
+                        "sState": "job",
+                        "sStateSt": "job"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "jobScheds",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "desc",
+                "sState": "jobScheds",
+                "sStateSt": "jobs",
+                "sText": "Search for Job",
+                "btn": {
+                  "title": {
+                    "sText": "Job Schedules"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Job Schedules"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected jobs?",
+            "sState": "jobScheds",
+            "sStateSt": "jobs"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "jobScheds",
+                "sStateSt": "jobs",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company Name",
+                    "sField": "data.val.company.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Company Desc",
+                    "sField": "data.val.company.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift Name",
+                    "sField": "data.val.schedule.val.shiftType.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift Desc",
+                    "sField": "data.val.schedule.val.shiftType.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Schedule Name",
+                    "sField": "data.val.schedule.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Mon",
+                    "sField": "data.val.schedule.mon"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Tue",
+                    "sField": "data.val.schedule.tue"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Wed",
+                    "sField": "data.val.schedule.wed"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Thu",
+                    "sField": "data.val.schedule.thu"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Fri",
+                    "sField": "data.val.schedule.fri"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sat",
+                    "sField": "data.val.schedule.sat"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sun",
+                    "sField": "data.val.schedule.sun"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "jobScheds",
+            "sText": "Add Job"
+          },
+          "dlg": {
+            "sState": "jobScheds",
+            "sStateSt": "jobScheds",
+            "formDlg": {
+              "sState": "jobScheds",
+              "sStateSt": "job",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "jobScheds",
+                    "sStateSt": "job"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "job",
+                    "sStateSt": "job"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Company",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company.name",
+                          "bIsReadOnly": false,
+                          "sStateSt": "companys"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Schedule",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "company.schedule",
+                          "bIsReadOnly": false,
+                          "sStateSt": "schedules"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Job Full",
+                        "sState": "jobScheds",
+                        "sStateSt": "jobScheds"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "metrics",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "province",
+                "sStateSt": "metric",
+                "sText": "Search for Metric",
+                "btn": {
+                  "title": {
+                    "sText": "Metric"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Metric"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected metric?",
+            "sState": "metric",
+            "sStateSt": "metric"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "metric",
+                "sStateSt": "metric",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "metric",
+            "sStateSt": "metric",
+            "sText": "Add Metric"
+          },
+          "dlg": {
+            "sState": "metric",
+            "sStateSt": "metric",
+            "formDlg": {
+              "sState": "metric",
+              "sStateSt": "metric",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "metric",
+                    "sStateSt": "metric"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "metric",
+                    "sStateSt": "metric"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "metric",
+                        "sState": "metric",
+                        "sStateSt": "metric"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "mgmtPayrolls",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "province",
+                "sStateSt": "mgmtPayroll",
+                "sText": "Search for MgmtPayroll",
+                "btn": {
+                  "title": {
+                    "sText": "MgmtPayroll"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "MgmtPayroll"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected mgmtPayroll?",
+            "sState": "mgmtPayroll",
+            "sStateSt": "mgmtPayroll"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "mgmtPayroll",
+                "sStateSt": "mgmtPayroll",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "mgmtPayroll",
+            "sStateSt": "mgmtPayroll",
+            "sText": "Add MgmtPayroll"
+          },
+          "dlg": {
+            "sState": "mgmtPayroll",
+            "sStateSt": "mgmtPayroll",
+            "formDlg": {
+              "sState": "mgmtPayroll",
+              "sStateSt": "mgmtPayroll",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "mgmtPayroll",
+                    "sStateSt": "mgmtPayroll"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "mgmtPayroll",
+                    "sStateSt": "mgmtPayroll"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "mgmtPayroll",
+                        "sState": "mgmtPayroll",
+                        "sStateSt": "mgmtPayroll"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "musics",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "music",
+                "sStateSt": "musics",
+                "sText": "Search for Music",
+                "btn": {
+                  "title": {
+                    "sText": "Companies"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Companies"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected time sheets?",
+            "sState": "music",
+            "sStateSt": "music"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "music",
+                "sStateSt": "music",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "date",
+                    "sText": "start",
+                    "sField": "data.nStart"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Coountry",
+                    "sField": "data.sCountry"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Type",
+                    "sField": "data.sType"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "music",
+            "sStateSt": "music",
+            "sText": "Add music"
+          },
+          "dlg": {
+            "sState": "music",
+            "sStateSt": "music",
+            "formDlg": {
+              "sState": "music",
+              "sStateSt": "music",
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "phone",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "lock",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "music",
+                    "sStateSt": "music"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "music",
+                    "sStateSt": "music"
+                  }
+                ]
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Music",
+                        "sState": "music",
+                        "sStateSt": "music"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "payrolls",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "province",
+                "sStateSt": "payroll",
+                "sText": "Search for Payroll",
+                "btn": {
+                  "title": {
+                    "sText": "Payroll"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Payroll"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected payroll?",
+            "sState": "payroll",
+            "sStateSt": "payroll"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "payroll",
+                "sStateSt": "payroll",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "payroll",
+            "sStateSt": "payroll",
+            "sText": "Add Payroll"
+          },
+          "dlg": {
+            "sState": "payroll",
+            "sStateSt": "payroll",
+            "formDlg": {
+              "sState": "payroll",
+              "sStateSt": "payroll",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "payroll",
+                    "sStateSt": "payroll"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "payroll",
+                    "sStateSt": "payroll"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "payroll",
+                        "sState": "payroll",
+                        "sStateSt": "payroll"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "provinces",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "province",
+                "sStateSt": "provinces",
+                "sText": "Search for Provinces",
+                "btn": {
+                  "title": {
+                    "sText": "Provinces"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Provinces"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected provinces?",
+            "sState": "province",
+            "sStateSt": "province"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "province",
+                "sStateSt": "province",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "province",
+            "sStateSt": "province",
+            "sText": "Add Province"
+          },
+          "dlg": {
+            "sState": "province",
+            "sStateSt": "province",
+            "formDlg": {
+              "sState": "province",
+              "sStateSt": "province",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "province",
+                    "sStateSt": "province"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "province",
+                    "sStateSt": "province"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "province",
+                        "sState": "province",
+                        "sStateSt": "province"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "reasons",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "province",
+                "sStateSt": "reason",
+                "sText": "Search for Reason",
+                "btn": {
+                  "title": {
+                    "sText": "Reason"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Reason"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected reason?",
+            "sState": "reason",
+            "sStateSt": "reason"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "reason",
+                "sStateSt": "reason",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "reason",
+            "sStateSt": "reason",
+            "sText": "Add Reason"
+          },
+          "dlg": {
+            "sState": "reason",
+            "sStateSt": "reason",
+            "formDlg": {
+              "sState": "reason",
+              "sStateSt": "reason",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "reason",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "reason",
+                    "sStateSt": "reason"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "reason",
+                        "sState": "reason",
+                        "sStateSt": "reason"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "sched",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "sched",
+                "sStateSt": "schedules",
+                "sText": "Search for Schedule",
+                "btn": {
+                  "title": {
+                    "sText": "Schedules"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Schedules"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected schedules?",
+            "sState": "sched",
+            "sStateSt": "schedules"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "sched",
+                "sStateSt": "schedule",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift Name",
+                    "sField": "data.val.shiftType.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift Desc",
+                    "sField": "data.val.shiftType.desc"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Mon",
+                    "sField": "data.mon"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Tue",
+                    "sField": "data.tue"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Wed",
+                    "sField": "data.wed"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Thu",
+                    "sField": "data.thu"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Fri",
+                    "sField": "data.fri"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sat",
+                    "sField": "data.sat"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sun",
+                    "sField": "data.sun"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "sched",
+            "sStateSt": "schedule",
+            "sText": "Add Schedules"
+          },
+          "dlg": {
+            "sState": "sched",
+            "formDlg": {
+              "sState": "sched",
+              "sStateSt": "schedule",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "sched",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "sched",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "bIsReadOnly": false,
+                          "sText": "Shift Type",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "shiftType",
+                          "sStateSt": "shiftTypes"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "mon",
+                          "sText": "Mon"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Tue",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "tue"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Wed",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "wed"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Thu",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "thu"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Fri",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "fri"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Sat",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sat"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Sun",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sun"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "sched",
+                        "sText": "Schedule"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedule",
+    "view": {
+      "sFilterIdD": "id",
+      "page": {
+        "form": {
+          "content": {
+            "grp": {
+              "sRecIdD": "0",
+              "flds": [
+                {
+                  "fld": {
+                    "slctCombo": {
+                      "bIsReadOnly": false,
+                      "sIcon": "vpn_key",
+                      "sParam": [
+                        "firstName",
+                        "lastName"
+                      ],
+                      "sRecIdD": "company",
+                      "sStateSt": "employees",
+                      "sText": "Name"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "slct": {
+                      "sText": "Shift",
+                      "sIcon": "vpn_key",
+                      "sRecIdD": "shiftType",
+                      "bIsReadOnly": false,
+                      "sStateSt": "shiftTypes"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Mon",
+                      "sIcon": "phone",
+                      "sRecIdD": "mon"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Tue",
+                      "sIcon": "phone",
+                      "sRecIdD": "tue"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Wed",
+                      "sIcon": "phone",
+                      "sRecIdD": "wed"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Thu",
+                      "sIcon": "phone",
+                      "sRecIdD": "thu"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Fri",
+                      "sIcon": "phone",
+                      "sRecIdD": "fri"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Sat",
+                      "sIcon": "phone",
+                      "sRecIdD": "sat"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "bool": {
+                      "sText": "Sun",
+                      "sIcon": "phone",
+                      "sRecIdD": "sun"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "actions": {
+            "btns": [
+              {
+                "sType": "cancel",
+                "sText": "Cancel",
+                "sState": "schedule",
+                "sStateSt": "schedule"
+              },
+              {
+                "sType": "ok",
+                "sText": "Ok",
+                "sPub": "quit"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedFulls",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "lastName",
+                "sState": "schedFulls",
+                "sStateSt": "employees",
+                "sText": "Search for Schedule",
+                "btn": {
+                  "title": {
+                    "sText": "Schedules Full"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Schedules Full"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected schedules?",
+            "sState": "schedFulls",
+            "sStateSt": "schedFulls"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "schedFulls",
+                "sStateSt": "schedFulls",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift Name",
+                    "sField": "data.val.shiftType.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift Desc",
+                    "sField": "data.val.shiftType.desc"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Mon",
+                    "sField": "data.mon"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Tue",
+                    "sField": "data.tue"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Wed",
+                    "sField": "data.wed"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Thu",
+                    "sField": "data.thu"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Fri",
+                    "sField": "data.fri"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sat",
+                    "sField": "data.sat"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sun",
+                    "sField": "data.sun"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "schedFulls",
+            "sText": "Add Schedules"
+          },
+          "dlg": {
+            "sState": "schedFulls",
+            "formDlg": {
+              "sState": "schedFulls",
+              "sStateSt": "schedFulls",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "schedFulls",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "schedFulls",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "slctCombo": {
+                          "bIsReadOnly": false,
+                          "sIcon": "vpn_key",
+                          "sParam": [
+                            "firstName",
+                            "lastName"
+                          ],
+                          "sRecIdD": "company",
+                          "sStateSt": "companys",
+                          "sText": "Name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "bIsReadOnly": false,
+                          "sText": "Shift Type",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "shiftType",
+                          "sStateSt": "shiftTypes"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "mon",
+                          "sText": "Mon"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Tue",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "tue"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Wed",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "wed"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Thu",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "thu"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Fri",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "fri"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Sat",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sat"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Sun",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sun"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "schedFulls",
+                        "sText": "Schedulee Full"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedules",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "lastName",
+                "sState": "schedule",
+                "sStateSt": "employees",
+                "sText": "Search for Schedule",
+                "btn": {
+                  "title": {
+                    "sText": "Schedules"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Schedules"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected schedules?",
+            "sState": "schedule",
+            "sStateSt": "schedule"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "schedule",
+                "sStateSt": "schedule",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Shift",
+                    "sField": "data.shiftType"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Mon",
+                    "sField": "data.mon"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Tue",
+                    "sField": "data.tue"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Wed",
+                    "sField": "data.wed"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Thu",
+                    "sField": "data.thu"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Fri",
+                    "sField": "data.fri"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sat",
+                    "sField": "data.sat"
+                  },
+                  {
+                    "sType": "bool",
+                    "sText": "Sun",
+                    "sField": "data.sun"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "schedule",
+            "sStateSt": "schedule",
+            "sText": "Add Schedule"
+          },
+          "dlg": {
+            "sState": "schedule",
+            "sStateSt": "schedule",
+            "formDlg": {
+              "sState": "schedule",
+              "sStateSt": "schedule",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "schedule",
+                    "sStateSt": "schedule"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "schedule",
+                    "sStateSt": "schedule"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "slctCombo": {
+                          "bIsReadOnly": false,
+                          "sIcon": "vpn_key",
+                          "sParam": [
+                            "firstName",
+                            "lastName"
+                          ],
+                          "sRecIdD": "company",
+                          "sStateSt": "employees",
+                          "sText": "Name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Shift",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "shiftType",
+                          "bIsReadOnly": false,
+                          "sStateSt": "shiftTypes"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Mon",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "mon"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Tue",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "tue"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Wed",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "wed"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Thu",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "thu"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Fri",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "fri"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Sat",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sat"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "bool": {
+                          "sText": "Sun",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sun"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "schedule",
+                        "sState": "schedule",
+                        "sStateSt": "schedule"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "shiftType",
+    "view": {
+      "page": {
+        "form": {
+          "content": {
+            "grp": {
+              "sRecIdD": "0",
+              "flds": [
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Id",
+                      "sIcon": "phone",
+                      "sRecIdD": "id"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Name",
+                      "sIcon": "phone",
+                      "sRecIdD": "name"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "Desc",
+                      "sIcon": "phone",
+                      "sRecIdD": "desc"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "actions": {
+            "btns": [
+              {
+                "sType": "cancel",
+                "sText": "Cancel",
+                "sState": "shiftType",
+                "sStateSt": "shiftType"
+              },
+              {
+                "sType": "ok",
+                "sText": "Ok",
+                "sState": "shiftType",
+                "sStateSt": "shiftType"
+              }
+            ]
+          },
+          "toolbar": {
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "shiftTypes",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "name",
+                "sState": "shiftType",
+                "sStateSt": "shiftTypes",
+                "sText": "Search for Shift Type",
+                "btn": {
+                  "title": {
+                    "sText": "Shift Types"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Shift Types"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected Shift Type?",
+            "sState": "shiftType",
+            "sStateSt": "shiftType"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "shiftType",
+                "sStateSt": "shiftType",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Name",
+                    "sField": "data.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Desc",
+                    "sField": "data.desc"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "shiftType",
+            "sStateSt": "shiftType",
+            "sText": "Add Shift Type"
+          },
+          "dlg": {
+            "sState": "shiftType",
+            "sStateSt": "shiftType",
+            "formDlg": {
+              "sState": "shiftType",
+              "sStateSt": "shiftType",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "shiftType",
+                    "sStateSt": "shiftType"
+                  },
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "shiftType",
+                    "sStateSt": "shiftType"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "name"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Desc",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "desc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Shift Type",
+                        "sState": "shiftType",
+                        "sStateSt": "shiftType"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeFulls",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "str": {
+                "sParam": "start",
+                "sState": "timeFulls",
+                "sStateSt": "timeSheet",
+                "sText": "Search for TimeSheet",
+                "btn": {
+                  "title": {
+                    "sText": "TimeSheet Full"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "TimeSheet Full"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected time sheets?",
+            "sState": "timeFulls",
+            "sStateSt": "timeSheets"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "timeFulls",
+                "sStateSt": "timeSheets",
+                "cols": [
+                  {
+                    "sType": "chkBox"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "First Name",
+                    "sField": "data.val.employee.firstName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Last Name",
+                    "sField": "data.val.employee.lastName"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Address",
+                    "sField": "data.val.employee.address"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "City",
+                    "sField": "data.val.employee.city"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #1",
+                    "sField": "data.val.employee.phoneNumber1"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Phone Number #2",
+                    "sField": "data.val.employee.phoneNumber2"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Postal Code",
+                    "sField": "data.val.employee.postalCode"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job Name",
+                    "sField": "data.val.job.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job Desc",
+                    "sField": "data.val.job.desc"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Schedule Name",
+                    "sField": "data.val.job.val.schedule.name"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Schedule Desc",
+                    "sField": "data.val.job.val.schedule.desc"
+                  },
+                  {
+                    "sType": "date",
+                    "sText": "Start",
+                    "sField": "data.start"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Mon",
+                    "sField": "data.mon",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Tue",
+                    "sField": "data.tue",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Wed",
+                    "sField": "data.wed",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Thu",
+                    "sField": "data.thu",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Fri",
+                    "sField": "data.fri",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Sat",
+                    "sField": "data.sat",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Sun",
+                    "sField": "data.sun",
+                    "sStateSt": "reason"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "timeFulls",
+            "sText": "Add Timeules"
+          },
+          "dlg": {
+            "sState": "timeFulls",
+            "formDlg": {
+              "sState": "timeFulls",
+              "sStateSt": "timeFulls",
+              "actions": {
+                "btns": [
+                  {
+                    "sState": "timeFulls",
+                    "sStateSt": "timeSheet",
+                    "sText": "Cancel",
+                    "sType": "cancel"
+                  },
+                  {
+                    "sState": "timeFulls",
+                    "sStateSt": "timeSheet",
+                    "sText": "Ok",
+                    "sType": "ok"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "First Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "firstName"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Last Name",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "lastName"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Address",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "address"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "City",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "city"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Phone Number #1",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber1"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Phone Number #2",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "phoneNumber2"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Postal Code",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "postalCode"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sState": "timeFulls",
+                        "sText": "Timeulee Full"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeReasons",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "date": {
+                "sParam": "start",
+                "sState": "timeReason",
+                "sStateSt": "timeReasons",
+                "sText": "Search for Time Sheet",
+                "btn": {
+                  "title": {
+                    "sText": "Time Sheet"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Time Sheets Reason"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected time sheets?",
+            "sState": "timeReason",
+            "sStateSt": "timeReason"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "timeReason",
+                "sStateSt": "timeReason",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Employee",
+                    "sField": "data.employee"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job",
+                    "sField": "data.job"
+                  },
+                  {
+                    "sType": "date",
+                    "sText": "Start",
+                    "sField": "data.start"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Mon",
+                    "sField": "data.mon",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Tue",
+                    "sField": "data.tue",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Wed",
+                    "sField": "data.wed",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Thu",
+                    "sField": "data.thu",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Fri",
+                    "sField": "data.fri",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Sat",
+                    "sField": "data.sat",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Sun",
+                    "sField": "data.sun",
+                    "sStateSt": "reason"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "timeReason",
+            "sStateSt": "timeReason",
+            "sText": "Add Time Sheet"
+          },
+          "dlg": {
+            "sState": "timeReason",
+            "sStateSt": "timeReason",
+            "formDlg": {
+              "sState": "timeReason",
+              "sStateSt": "timeReason",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "timeReason",
+                    "sStateSt": "timeReason"
+                  },
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "timeReason",
+                    "sStateSt": "timeReason"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "str": {
+                          "sText": "Employee",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "employee"
+                        }
+                      }
+                    }, {
+                      "fld": {
+                        "str": {
+                          "sText": "Job",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "job"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "date": {
+                          "sText": "Start",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "start"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Mon",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "mon"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Tue",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "tue"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Wed",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "wed"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Thu",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "thu"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Fri",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "fri"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Sat",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sat"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Sun",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sun"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Time Sheet Reason",
+                        "sState": "timeReason",
+                        "sStateSt": "timeSheet"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeSheet",
+    "view": {
+      "page": {
+        "form": {
+          "content": {
+            "grp": {
+              "sRecIdD": "0",
+              "flds": [
+                {
+                  "fld": {
+                    "str": {
+                      "sText": "job",
+                      "sIcon": "phone",
+                      "sRecIdD": "job"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "date": {
+                      "sText": "Start",
+                      "sIcon": "phone",
+                      "sRecIdD": "start"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Mon",
+                      "sIcon": "phone",
+                      "sRecIdD": "mon"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Tue",
+                      "sIcon": "phone",
+                      "sRecIdD": "tue"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Wed",
+                      "sIcon": "phone",
+                      "sRecIdD": "wed"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Thu",
+                      "sIcon": "phone",
+                      "sRecIdD": "thu"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Fri",
+                      "sIcon": "phone",
+                      "sRecIdD": "fri"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Sat",
+                      "sIcon": "phone",
+                      "sRecIdD": "sat"
+                    }
+                  }
+                },
+                {
+                  "fld": {
+                    "hour": {
+                      "sText": "Sun",
+                      "sIcon": "phone",
+                      "sRecIdD": "sun"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "actions": {
+            "btns": [
+              {
+                "sType": "cancel",
+                "sText": "Cancel",
+                "sState": "timeSheet",
+                "sStateSt": "timeSheet"
+              },
+              {
+                "sType": "ok",
+                "sText": "Ok",
+                "sPub": "quit"
+              }
+            ]
+          },
+          "toolbar": {
+            "rows": [
+              {
+                "row": {
+                  "title": {
+                    "sText": "Shift Type",
+                    "sState": "shiftType",
+                    "sStateSt": "shiftType"
+                  }
+                }
+              },
+              {
+                "row": {
+                  "info": {
+                    "img": {
+                      "sSrcIdD": "data.image",
+                      "sTextIdD": "data.name",
+                      "sText": "to be fixed"
+                    },
+                    "sTextIdD": "data.name",
+                    "sText": "to be fixed"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeSheets",
+    "view": {
+      "page": {
+        "crud": {
+          "hdr": {
+            "srch": {
+              "date": {
+                "sParam": "start",
+                "sState": "timeSheet",
+                "sStateSt": "timeSheets",
+                "sText": "Search for Time Sheet",
+                "btn": {
+                  "title": {
+                    "sText": "Time Sheets"
+                  }
+                }
+              }
+            },
+            "title": {
+              "sText": "Time Sheets"
+            }
+          },
+          "select": {
+            "sDelMsg": "Are you sure you want to delete all selected time sheets?",
+            "sState": "timeSheet",
+            "sStateSt": "timeSheet"
+          },
+          "content": {
+            "sideBar": {},
+            "ctr": {
+              "agGrid": {
+                "sState": "timeSheet",
+                "sStateSt": "timeSheet",
+                "cols": [
+                  {
+                    "sType": "rowSel"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Ref",
+                    "sField": "id"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Employee",
+                    "sField": "data.employee"
+                  },
+                  {
+                    "sType": "str",
+                    "sText": "Job",
+                    "sField": "data.job"
+                  },
+                  {
+                    "sType": "date",
+                    "sText": "Start",
+                    "sField": "data.start"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Mon",
+                    "sField": "data.mon",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Tue",
+                    "sField": "data.tue",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Wed",
+                    "sField": "data.wed",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Thu",
+                    "sField": "data.thu",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Fri",
+                    "sField": "data.fri",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Sat",
+                    "sField": "data.sat",
+                    "sStateSt": "reason"
+                  },
+                  {
+                    "sType": "hour",
+                    "sText": "Sun",
+                    "sField": "data.sun",
+                    "sStateSt": "reason"
+                  }
+                ],
+                "defaultCol": {
+                  "bResizable": true,
+                  "bEditable": true,
+                  "bFilter": true
+                },
+                "opts": {
+                  "bEnableSort": true,
+                  "bEnableFltr": true,
+                  "bEnableRowSel": true
+                }
+              }
+            }
+          },
+          "add": {
+            "sIcon": "clock",
+            "sState": "timeSheet",
+            "sStateSt": "timeSheet",
+            "sText": "Add Time Sheet"
+          },
+          "dlg": {
+            "sState": "timeSheet",
+            "sStateSt": "timeSheet",
+            "formDlg": {
+              "sState": "timeSheet",
+              "sStateSt": "timeSheet",
+              "actions": {
+                "btns": [
+                  {
+                    "sType": "ok",
+                    "sText": "Ok",
+                    "sState": "timeSheet",
+                    "sStateSt": "timeSheet"
+                  },
+                  {
+                    "sType": "cancel",
+                    "sText": "Cancel",
+                    "sState": "timeSheet",
+                    "sStateSt": "timeSheet"
+                  }
+                ]
+              },
+              "content": {
+                "grp": {
+                  "sRecIdD": "data",
+                  "flds": [
+                    {
+                      "fld": {
+                        "slct": {
+                          "sText": "Employee",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "employee",
+                          "bIsReadOnly": false,
+                          "sStateSt": "employees"
+                        }
+                      }
+                    }, {
+                      "fld": {
+                        "slct": {
+                          "sText": "Job",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "job",
+                          "bIsReadOnly": false,
+                          "sStateSt": "jobs"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "date": {
+                          "sText": "Start",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "start"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Mon",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "mon"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Tue",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "tue"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Wed",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "wed"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Thu",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "thu"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Fri",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "fri"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Sat",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sat"
+                        }
+                      }
+                    },
+                    {
+                      "fld": {
+                        "hour": {
+                          "sText": "Sun",
+                          "sIcon": "vpn_key",
+                          "sRecIdD": "sun"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "toolbar": {
+                "rows": [
+                  {
+                    "row": {
+                      "title": {
+                        "sText": "Time Sheet",
+                        "sState": "timeSheet",
+                        "sStateSt": "timeSheet"
+                      }
+                    }
+                  },
+                  {
+                    "row": {
+                      "info": {
+                        "img": {
+                          "sSrcIdD": "data.image",
+                          "sTextIdD": "data.name",
+                          "sText": "to be fixed"
+                        },
+                        "sTextIdD": "data.name",
+                        "sText": "to be fixed"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

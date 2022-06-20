@@ -1,0 +1,34 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/col/phone/kwUiListColPhone.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+    <ng-container matColumnDef="phone"   >
+
+        <mat-header-cell *matHeaderCellDef
+                         fxHide
+                         fxShow.gt-sm   >
+            Phone
+        </mat-header-cell>
+
+        <mat-cell *matCellDef="let data"
+                  fxHide
+                  fxShow.gt-sm  >
+
+            <p class="phone text-truncate">
+                {{data.phone}}
+            </p>
+
+        </mat-cell>
+
+    </ng-container>

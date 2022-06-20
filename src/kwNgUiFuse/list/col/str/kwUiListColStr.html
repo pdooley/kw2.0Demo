@@ -1,0 +1,31 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/col/str/kwUiListColStr.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<ng-container
+    matColumnDef="str"   >
+
+    <mat-header-cell *matHeaderCellDef>
+        {{sText}}
+    </mat-header-cell>
+
+    <mat-cell *matCellDef="let data">
+
+        <p class="text-truncate font-weight-600">
+            {{data.name}}
+        </p>
+
+    </mat-cell>
+
+</ng-container>

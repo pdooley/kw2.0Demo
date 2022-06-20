@@ -1,0 +1,50 @@
+/**********************************************************************
+*
+* kwNgUiFuse/list/row/kwUiListRow.scss
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*       .mat-row {
+            position: relative;
+            cursor: pointer;
+            padding: 8px;
+
+            .mat-cell {
+
+                &.mat-column-detail-button {
+                    flex: 0 1 auto;
+                    padding: 0 24px 0 0;
+
+                    @include media-breakpoint('gt-md') {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+
+@import "src/@fuse/scss/fuse";
+
+.mat-row {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+
+  .mat-cell {
+    min-width: 0;
+
+    &.mat-column-detail-button {
+      flex: 0 1 auto;
+      padding: 0 24px 0 0;
+
+      @include media-breakpoint('gt-md') {
+        display: none;
+      }
+    }
+  }
+}

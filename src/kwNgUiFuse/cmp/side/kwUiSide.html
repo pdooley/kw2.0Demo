@@ -1,0 +1,47 @@
+<mat-sidenav-container
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    <!--
+    <mat-sidenav [mode]="view.sMode"
+                             [opened]="view.bIsOpened"
+                             [fixedInViewport]="view.bIsFixed"
+                             [fixedTopGap]="view.nTop"
+                             [fixedBottomGap]="view.nBottom">
+-->
+
+    <mat-sidenav
+        mode="side"
+        opened
+        class="sidenav">
+
+        <kw-ui-logo
+            *ngIf="logo"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="view">
+
+        </kw-ui-logo>
+
+        <kw-ui-input
+            *ngIf="input"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="view">
+
+        </kw-ui-input>
+
+        <nav
+            class="nb-container">
+        </nav>
+
+    </mat-sidenav>
+
+</mat-sidenav-container>

@@ -1,0 +1,34 @@
+/**********************************************************************
+*
+* kwNgUiFuse/cmp/btn/kwUiBtn.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+
+<a [routerLink]="sLink">
+
+    <kw-ui-img
+        *ngIf="img"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-img>
+
+    <kw-ui-title
+        *ngIf="title"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-title>
+
+</a>

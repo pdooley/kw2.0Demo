@@ -1,0 +1,48 @@
+
+.mat-list {
+    padding-top: 44.5px;
+    font-family: GothamRounded;
+    .mat-list-item .mat-list-item-content {
+        padding: 0;
+    }
+}
+
+.left-sidenav {
+    font-family: GothamRounded;
+    background-color: var(--white-two);
+
+    .mat-subheader {
+        font-size: 20.9px;
+        font-weight: 300;
+        color: var(--charcoal-grey-two);
+        margin-bottom: 51px;
+        padding: 0 36.5px;
+        font-family: GothamRounded;
+    }
+
+    .mat-list-item {
+        cursor: pointer;
+        font-family: GothamRounded;
+        color: #c0c0c0;
+        display: flex;
+        height: 40px;
+        font-size: 15px;
+        margin-bottom: 36px;
+        padding: 0 36.5px;
+        &.active {
+            color: var(--bright-orange);
+            border-left: solid 2px var(--bright-orange);
+            padding: 0 34.5px;
+        }
+        &.focus {
+            outline: none;
+        }
+
+        .mat-line {
+            font-weight: 500;
+        }
+    }
+
+    .mat-divider {
+    }
+}

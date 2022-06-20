@@ -1,0 +1,40 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/toolbar/row/title/kwUiToolbarRowTitle.ts
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<mat-toolbar-row
+    fxLayout="row"
+    fxLayoutAlign="space-between center"   >
+
+    <span
+        class="title dialog-title">
+
+        {{sText}}
+
+    </span>
+
+    <button
+        mat-icon-button
+        (click)="onClick()"
+        aria-label="Close dialog"   >
+
+        <mat-icon>
+
+            close
+
+        </mat-icon>
+
+    </button>
+
+</mat-toolbar-row>

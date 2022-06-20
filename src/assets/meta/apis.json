@@ -1,0 +1,1070 @@
+[
+  {
+    "sId": "acc",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "accounts[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "accounts/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "accounts",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "accCreate",
+    "sMode": "live",
+    "actions": {
+      "post": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "accountCreate",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "accs",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "accounts",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "actTag",
+    "sMode": "live",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/activityTags[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "activityTags[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/activityTags/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "api/activityTags/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/activityTags",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "api/activityTags",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/activityTags",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "api/activityTags",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "actTags",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/activityTags",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "api/activityTags",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "api",
+    "sMode": "live",
+    "actions": {
+      "get": {
+        "live": {
+          "sService": "airSembly",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "api/accounts",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "company",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "companies/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "companies/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "companies/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "companies/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "companies",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "companies",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "companies",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "companies",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "companys",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "companies",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "companies",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "companies/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "companies/[0]",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "employee",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "employees/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "employees/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "employees/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "employees/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "employees",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "employees",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "employees",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "employees",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "employees",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "employees",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "employees",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "job",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "jobs/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "jobs/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "jobs/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "jobs/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "jobs",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "jobs",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "jobs",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "jobs",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "jobs",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "jobs",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "jobs",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "metric",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "metrics",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "metrics",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "metrics",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "model",
+    "sMode": "live",
+    "actions": {
+      "get": {
+        "live": {
+          "sService": "json",
+          "sTemplate": "assets/config/mdls.json",
+          "sToken": null
+        },
+        "debug": {
+          "sService": "serviceProvider",
+          "sTemplate": "api/Model",
+          "sToken": null
+        }
+      }
+    }
+  },
+  {
+    "sId": "music",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "musics/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "musics/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "musics/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "musics/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "musics",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "musics",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "musics",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "musics",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "musics",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "musics",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "musics",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "musics/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "musics/[0]",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "id": "org",
+    "sMode": "live",
+    "actions": {
+      "get": {
+        "live": {
+          "sService": "json",
+          "sTemplate": "assets/config/mdls.json",
+          "sToken": null
+        },
+        "debug": {
+          "sService": "serviceProvider",
+          "sTemplate": "api/null",
+          "sToken": null
+        }
+      }
+    }
+  },
+  {
+    "sId": "province",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "provinces",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "provinces",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "reason",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "reasons/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "reasons/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "reasons/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "reasons/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "reasons",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "reasons",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "reasons",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "reasons",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "reasons",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "reasons",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "reasons",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "redirect",
+    "sMode": "live",
+    "actions": {
+      "get": {
+        "live": {
+          "sService": "json",
+          "sTemplate": "assets/config/mdls.json",
+          "sToken": null
+        },
+        "debug": {
+          "sService": "serviceProvider",
+          "sTemplate": "api/redirect",
+          "sToken": null
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedule",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "schedule/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "schedule/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "schedule/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "schedule/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "schedule",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "schedule",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "schedule",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "schedule",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedules",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "schedule",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "schedule",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "shiftType",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "shiftType/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "shiftType/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "shiftType/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "shiftType/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "shiftType",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "shiftType",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "shiftType",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "shiftType",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "shiftTypes",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "shiftType",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "shiftType",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "signin",
+    "sMode": "live",
+    "actions": {
+      "post": {
+        "live": {
+          "sService": "dealwip",
+          "sTemplate": "authentication/signin",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "authentication/signin",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "signinLinkedin",
+    "sMode": "live",
+    "actions": {
+      "get": {
+        "live": {
+          "sService": "dealwip",
+          "sTemplate": "/authentication/linkedin",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "/authentication/linkedin",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "signinLinkedinCb",
+    "sMode": "live",
+    "actions": {
+      "get": {
+        "live": {
+          "sService": "dealwip",
+          "sTemplate": "/authentication/linkedin/callback",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "/authentication/linkedin/callback",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "signout",
+    "sMode": "live",
+    "actions": {
+      "post": {
+        "live": {
+          "sService": "dealwip",
+          "sTemplate": "authentication/signout",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "authentication/signout",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "signup",
+    "sMode": "live",
+    "actions": {
+      "post": {
+        "live": {
+          "sService": "dealwip",
+          "sTemplate": "authentication/signup",
+          "sToken": null
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "authentication/signup",
+          "sToken": null
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeSheet",
+    "sMode": "debug",
+    "actions": {
+      "delete": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet/[0]",
+          "sToken": "null"
+        }
+      },
+      "get": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet/[0]",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet/[0]",
+          "sToken": "null"
+        }
+      },
+      "post": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet",
+          "sToken": "null"
+        }
+      },
+      "patch": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet",
+          "sToken": "null"
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeSheets",
+    "sMode": "live",
+    "actions": {
+      "all": {
+        "live": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet",
+          "sToken": "null"
+        },
+        "debug": {
+          "sService": "firebase",
+          "sTemplate": "timeSheet",
+          "sToken": "null"
+        }
+      }
+    }
+  }
+]

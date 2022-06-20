@@ -1,0 +1,73 @@
+<!--
+/**********************************************************************
+*
+* kwNgUi/crud/kwUiCrud.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<kw-ui-dlg
+    *ngIf="dlg"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-dlg>
+
+
+<kw-ui-crud-hdr
+    *ngIf="hdr"
+    class="header accent p-16 p-sm-24"
+    fxLayout="column"
+    fxLayoutAlign="start"
+    fxLayout.gt-xs="row"
+    fxLayoutAlign.gt-xs="space-between center"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view" >
+
+</kw-ui-crud-hdr>
+
+<kw-ui-crud-select
+    *ngIf="select"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view"
+    [@slideInTop]
+    class="accent-600">
+
+</kw-ui-crud-select>
+
+
+<kw-ui-crud-content
+    *ngIf="content"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view"
+    class="content" >
+
+</kw-ui-crud-content>
+
+
+<kw-ui-crud-add
+    *ngIf="add"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view"
+    class="content" >
+
+</kw-ui-crud-add>
+
+

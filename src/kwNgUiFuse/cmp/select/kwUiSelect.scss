@@ -1,0 +1,47 @@
+.default {
+
+    .right {
+        margin-right: 20px;
+        width: 210px;
+    }
+
+    .left {
+        margin-left: 20px;
+        width: 130px;
+    }
+
+    .mat-form-field-flex {
+        height: 64px;
+        .mat-input-prefix {
+            margin-top: 20px;
+        }
+    }
+
+    .mat-select {
+        font-family: GothamRounded;
+        margin: auto 0;
+    }
+
+    ::ng-deep .mat-select-value {
+        color: var(--bright-orange);
+    }
+
+    .select {
+        height: inherit;
+        display: flex;
+        margin: 0 54px 0 auto;
+        font-family: GothamRounded;
+        font-size: 13px;
+        font-weight: 300;
+        width: 200px;
+        color: var(--bright-orange);
+
+        .selectTitle {
+            color: var(--pale-grey-four);
+            margin-right: 4px;
+            width: 120px;
+        }
+
+    }
+
+}

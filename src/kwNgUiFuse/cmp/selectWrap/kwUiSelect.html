@@ -1,0 +1,35 @@
+<div
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    <mat-icon>
+        {{sIcon}}
+    </mat-icon>
+
+    <div class="label">
+        {{sTitle}}
+    </div>
+
+    <div class="select">
+
+        <span class="selectTitle">
+            {{sSelectTitle}}
+        </span>
+
+        <kw-ui-select
+            *ngIf="select"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="view">
+
+        </kw-ui-select>
+
+    </div>
+
+</div>

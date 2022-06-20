@@ -1,0 +1,1123 @@
+[
+  {
+    "sId": "acc",
+    "sType": "full",
+    "params": [
+      {
+        "default": "Costco",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "companyName",
+        "sNameInt": "sCompanyName",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Company name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "createTime",
+        "sNameInt": "sCreateTime",
+        "nPosition": 2,
+        "sSrvcIn": "time",
+        "sSrvcOut": "str",
+        "sTitle": "Created"
+      },
+      {
+        "default": "CAD",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "currency",
+        "sNameInt": "currency",
+        "nPosition": 3,
+        "sSrvcIn": "curr",
+        "sSrvcOut": "currcode",
+        "sTitle": "Currency",
+        "values": [
+          "USD",
+          "CAD",
+          "euro"
+        ]
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 4,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "isDeleted",
+        "sNameInt": "bIsDeleted",
+        "nPosition": 5,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "num",
+        "sTitle": "Deleted?"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameInt": "bIsServiceProvider",
+        "sNameExt": "isServiceProvider",
+        "nPosition": 6,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "num",
+        "sTitle": "Service provider?"
+      },
+      {
+        "default": "en",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameInt": "language",
+        "sNameExt": "language",
+        "nPosition": 7,
+        "sSrvcIn": "lang",
+        "sSrvcOut": "langcode",
+        "sTitle": "Language"
+      },
+      {
+        "default": "America/Toronto",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "timeZone",
+        "sNameInt": "timeZone",
+        "nPosition": 8,
+        "sSrvcIn": "tz",
+        "sSrvcOut": "tzcode",
+        "sTitle": "Time Zone"
+      }
+    ]
+  },
+  {
+    "sId": "accCreate",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 4,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": false,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "isDefault",
+        "sNameInt": "bIsDefault",
+        "nPosition": 4,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "num",
+        "sTitle": "Default?"
+      },
+      {
+        "default": "roleb",
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 8,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      }
+    ]
+  },
+  {
+    "sId": "actTag",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 4,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": false,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "isDefault",
+        "sNameInt": "bIsDefault",
+        "nPosition": 4,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "num",
+        "sTitle": "Default?"
+      },
+      {
+        "default": "roleb",
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 8,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      }
+    ]
+  },
+  {
+    "sId": "api",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 4,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": false,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "isDefault",
+        "sNameInt": "bIsDefault",
+        "nPosition": 4,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "num",
+        "sTitle": "Default?"
+      },
+      {
+        "default": "roleb",
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 8,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      }
+    ]
+  },
+  {
+    "sId": "company",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 0,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": "null",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Company name"
+      }
+    ]
+  },
+  {
+    "sId": "music",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "id",
+        "nPosition": 0,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "ID"
+      },
+      {
+        "default": "null",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sCountry",
+        "sNameInt": "sCountry",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Company name"
+      }
+    ]
+  },
+  {
+    "sId": "employee",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 0,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "firstName",
+        "sNameInt": "sFirstName",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "First Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "lastName",
+        "sNameInt": "sLastName",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Last Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "address",
+        "sNameInt": "sAddress",
+        "nPosition": 3,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Address"
+      },
+      {
+        "default": "null",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "city",
+        "sNameInt": "sCity",
+        "nPosition": 4,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "City"
+      },
+      {
+        "default": "null",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "province",
+        "sNameInt": "nProvince",
+        "nPosition": 5,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "Province"
+      },
+      {
+        "default": "null",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "postalCode",
+        "sNameInt": "sPostalCode",
+        "nPosition": 6,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Postal Code"
+      },
+      {
+        "default": "null",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "phoneNumber1",
+        "sNameInt": "sPhoneNumber1",
+        "nPosition": 6,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Phone Number 1"
+      },
+      {
+        "default": "null",
+        "bIsRequired": false,
+        "bIsVisible": true,
+        "sNameExt": "phoneNumber2",
+        "sNameInt": "sPhoneNumber2",
+        "nPosition": 6,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Phone Number 2"
+      }
+    ]
+  },
+  {
+    "sId": "job",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "sId",
+        "nPosition": 0,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "ID"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "company",
+        "sNameInt": "sCompany",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Company"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "desc",
+        "sNameInt": "sDesc",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      }
+    ]
+  },
+  {
+    "sId": "metric",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 2,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": false,
+        "sNameExt": "permissions",
+        "sNameInt": "permissions",
+        "nPosition": 2,
+        "sSrvcIn": "arr",
+        "sSrvcOut": "arr",
+        "sTitle": "Permissions"
+      }
+    ]
+  },
+  {
+    "sId": "model",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 2,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": false,
+        "sNameExt": "permissions",
+        "sNameInt": "permissions",
+        "nPosition": 2,
+        "sSrvcIn": "arr",
+        "sSrvcOut": "arr",
+        "sTitle": "Permissions"
+      }
+    ]
+  },
+  {
+    "sId": "music",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "id",
+        "nPosition": 0,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "ID"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sCountry",
+        "sNameInt": "sCountry",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Country"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sType",
+        "sNameInt": "sType",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Type"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": false,
+        "sNameExt": "nStart",
+        "sNameInt": "nStart",
+        "nPosition": 3,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "Start"
+      }
+    ]
+  },
+  {
+    "sId": "org",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 2,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": false,
+        "sNameExt": "permissions",
+        "sNameInt": "permissions",
+        "nPosition": 2,
+        "sSrvcIn": "arr",
+        "sSrvcOut": "arr",
+        "sTitle": "Permissions"
+      }
+    ]
+  },
+  {
+    "sId": "province",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "desc",
+        "sNameInt": "sDesc",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      }
+    ]
+  },
+  {
+    "sId": "redirect",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "desc",
+        "sNameInt": "sDesc",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      }
+    ]
+  },
+  {
+    "sId": "reason",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "description",
+        "sNameInt": "sDescription",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 2,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "ID"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "name",
+        "sNameInt": "sName",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Name"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": false,
+        "sNameExt": "permissions",
+        "sNameInt": "permissions",
+        "nPosition": 2,
+        "sSrvcIn": "arr",
+        "sSrvcOut": "arr",
+        "sTitle": "Permissions"
+      }
+    ]
+  },
+  {
+    "sId": "schedule",
+    "sType": "sub",
+    "params": [
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 0,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "Id"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "Job",
+        "sNameInt": "sJob",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Job"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "employee",
+        "sNameInt": "sEmployee",
+        "nPosition": 2,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Employee"
+      },
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "shift",
+        "sNameInt": "nShift",
+        "nPosition": 3,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "num",
+        "sTitle": "Shift"
+      },
+      {
+        "default": "true",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "mon",
+        "sNameInt": "sMon",
+        "nPosition": 4,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Monday"
+      },
+      {
+        "default": "true",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "tue",
+        "sNameInt": "sTue",
+        "nPosition": 4,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Tuesday"
+      },
+      {
+        "default": "true",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "wed",
+        "sNameInt": "sWed",
+        "nPosition": 5,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Wednesdau"
+      },
+      {
+        "default": "true",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "thu",
+        "sNameInt": "sThu",
+        "nPosition": 6,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Thursday"
+      },
+      {
+        "default": "true",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "fri",
+        "sNameInt": "sFri",
+        "nPosition": 7,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Fridau"
+      },
+      {
+        "default": "false",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sat",
+        "sNameInt": "sSat",
+        "nPosition": 8,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Saturday"
+      },
+      {
+        "default": "false",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sun",
+        "sNameInt": "sSun",
+        "nPosition": 9,
+        "sSrvcIn": "bool",
+        "sSrvcOut": "bool",
+        "sTitle": "Sunday"
+      }
+    ]
+  },
+  {
+    "sId": "shiftType",
+    "sType": "sub",
+    "params": [
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nId",
+        "nPosition": 1,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "Id"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "code",
+        "sNameInt": "sCode",
+        "nPosition": 4,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Code"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "desc",
+        "sNameInt": "sDesc",
+        "nPosition": 4,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Description"
+      }
+    ]
+  },
+  {
+    "sId": "signin",
+    "sType": "sub",
+    "params": [
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "email",
+        "sNameInt": "sUsername",
+        "nPosition": 0,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Email"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "password",
+        "sNameInt": "sPassword",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Password"
+      }
+    ]
+  },
+  {
+    "sId": "signout",
+    "sType": "sub",
+    "params": [
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "email",
+        "sNameInt": "sUsername",
+        "nPosition": 0,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Email"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "password",
+        "sNameInt": "sPassword",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Password"
+      }
+    ]
+  },
+  {
+    "sId": "signup",
+    "sType": "sub",
+    "params": [
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "email",
+        "sNameInt": "sUsername",
+        "nPosition": 0,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Email"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "password",
+        "sNameInt": "sPassword",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Password"
+      }
+    ]
+  },
+  {
+    "sId": "timeSheet",
+    "sType": "sub",
+    "params": [
+      {
+        "default": 0,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "id",
+        "sNameInt": "nID",
+        "nPosition": 0,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "Id"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "schedule",
+        "sNameInt": "sSchedule",
+        "nPosition": 1,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Schedule"
+      },
+      {
+        "default": null,
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "start",
+        "sNameInt": "sStart",
+        "nPosition": 2,
+        "sSrvcIn": "num",
+        "sSrvcOut": "num",
+        "sTitle": "Start"
+      },
+      {
+        "default": "8",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "mon",
+        "sNameInt": "sMon",
+        "nPosition": 3,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Monday"
+      },
+      {
+        "default": "8",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "tue",
+        "sNameInt": "sTue",
+        "nPosition": 4,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Tuesday"
+      },
+      {
+        "default": "8",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "wed",
+        "sNameInt": "sWed",
+        "nPosition": 5,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Wednesday"
+      },
+      {
+        "default": "8",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "thu",
+        "sNameInt": "sThu",
+        "nPosition": 6,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Thursday"
+      },
+      {
+        "default": "8",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "fri",
+        "sNameInt": "sFri",
+        "nPosition": 7,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Friday"
+      },
+      {
+        "default": " ",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sat",
+        "sNameInt": "sSat",
+        "nPosition": 8,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Saturday"
+      },
+      {
+        "default": " ",
+        "bIsRequired": true,
+        "bIsVisible": true,
+        "sNameExt": "sun",
+        "sNameInt": "sSun",
+        "nPosition": 9,
+        "sSrvcIn": "str",
+        "sSrvcOut": "str",
+        "sTitle": "Sunday"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/toolbar/kwUiToolbarRow.ts
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<kw-ui-toolbar-row-info
+    *ngIf="info"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-toolbar-row-info>
+
+
+<kw-ui-toolbar-row-title
+    *ngIf="title"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-toolbar-row-title>

@@ -1,0 +1,46 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/crud/srch/slct/kwUiCrudSrchSlct.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<form
+    class="search-wrapper mt-16 mt-sm-0"
+    ng-submit="OnSrch()">
+
+    <div class="search"
+         fxFlex
+         fxLayout="row"
+         fxLayoutAlign="start center" >
+
+        <button
+            mat-fab
+            class="accent"
+            (click)="onSrchSlct()"
+            aria-label="sText"
+            [@animate]="{value:'*', params:{delay:'300ms',scale:'.2'}}" >
+
+            <mat-icon>
+
+                search
+
+            </mat-icon>
+
+        </button>
+
+        <input [placeholder]="sText"
+               [(ngModel)]="sVal"
+               [ngModelOptions]="{standalone: true}">
+
+    </div>
+
+</form>

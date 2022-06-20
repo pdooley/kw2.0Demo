@@ -1,0 +1,52 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/kwUiListBtnsBtn.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+<div *ngIf="view"
+     [class]="sStyl"    >
+
+    <div>{{sComp}}</div>
+    {{view.sText}}
+
+    <kw-ui-list-btns-btn-del
+        *ngIf="del"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-list-btns-btn-del>
+
+
+    <kw-ui-list-btns-btn-more
+        *ngIf="more"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-list-btns-btn-more>
+
+
+    <kw-ui-list-btns-btn-toggle
+        *ngIf="toggle"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-list-btns-btn-toggle>
+
+
+</div>
+

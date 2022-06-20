@@ -1,0 +1,40 @@
+.default {
+    display: flex;
+    height: 62.5px;
+    background-color: var(--white-two);
+    padding-left: 24px;
+    border-bottom: solid 0.5px var(--pale-grey-two);
+
+  kw-ui-select,
+  kw-ui-input {
+    margin: auto 0;
+    width: 50%;
+  }
+
+  kw-ui-util-lft {
+    width: 90%;
+    margin-left: 52px;
+  }
+
+  kw-ui-util-rht {
+    width: 200px;
+    margin-right: 52px;
+  }
+
+  .right
+  {
+      height: inherit;
+      display: flex;
+      margin: 0 54px 0 auto;
+      font-family: GothamRounded;
+      font-size: 13px;
+      font-weight: 300;
+  }
+
+  .left {
+      margin: auto 0 auto 52px;
+      width: 90%;
+      height: inherit;
+      display: flex;
+  }
+}

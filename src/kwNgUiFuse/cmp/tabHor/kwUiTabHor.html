@@ -1,0 +1,22 @@
+<div
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    <a mat-tab-link
+       [routerLink]="sLink"
+       routerLinkActive #rla="routerLinkActive">
+
+        <mat-icon>
+            {{sIcon}}
+        </mat-icon>
+
+        {{sText}}
+
+    </a>
+
+</div>

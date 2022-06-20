@@ -1,0 +1,29 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/form/toolbar/kwUiToolbar.ts
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<mat-toolbar
+    matDialogTitle
+    class="mat-accent m-0" >
+
+    <kw-ui-toolbar-row
+        *ngFor="let row of rows"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="row"  >
+
+    </kw-ui-toolbar-row>
+
+</mat-toolbar>

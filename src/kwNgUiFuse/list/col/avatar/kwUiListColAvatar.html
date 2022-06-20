@@ -1,0 +1,28 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/col/avatar/kwUiListColAvatar.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+    <ng-container matColumnDef="avatar"   >
+
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+
+        <mat-cell *matCellDef="let dasa">
+
+            <img class="avatar"
+                 *ngIf="contact.avatar"
+                 [alt]="data.name"
+                 [src]="contact.avatar"/>
+
+        </mat-cell>
+
+    </ng-container>

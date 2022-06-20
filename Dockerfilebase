@@ -1,0 +1,24 @@
+./FROM alexsuch/angular-cli:7.0.4
+
+# Constants
+ENV APP        teppen
+ENV SERVICES   /usr/local/kw/services
+ENV DIR_PROJ   $SERVICES/$APP
+ENV KW_PORT   4206
+
+EXPOSE $KW_PORT
+
+COPY package.json /tmp/package.json
+RUN cd /tmp && npm install
+RUN mkdir -p $DIR_PROJ && cp -a /tmp/node_modules $DIR_PROJ
+
+WORKDIR $DIR_PROJ
+
+COPY karma.conf.js .
+COPY protractor.conf.js .
+COPY tsconfig.json .
+COPY tslint.json .
+
+COPY ./angular.json .
+
+CMD ["/bin/sh"]

@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.app.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "paths": {
+      "@kwUi/*": [
+        "kwUi/*"
+      ],
+      "@kwUiClass/*": [
+        "kwUi/class/*"
+      ],
+      "@kwUiCtrl/*": [
+        "kwUi/ctrl/*"
+      ],
+      "@kwUiStat/*": [
+        "kwUi/stat/*"
+      ],
+     }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

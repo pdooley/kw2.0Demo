@@ -1,0 +1,196 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "paths": {
+      /** application **/
+      "@app/*": [
+        "app/*"
+      ],
+      "@appCommon/*": [
+        "app/common/*"
+      ],
+      "@appCore/*": [
+        "app/core/*"
+      ],
+      "@appEnv/*": [
+        "app/core/*"
+      ],
+      /** dw **/
+      "@dw/*": [
+        "dw/*"
+      ],
+      "@dwClass/*": [
+        "dw/class/*"
+      ],
+      "@dwComp/*": [
+        "dw/comp/*"
+      ],
+      "@dwCore/*": [
+        "dw/core/*"
+      ],
+      "@dwPage/*": [
+        "dw/page/*"
+      ],
+      "@dwState/*": [
+        "dw/state/*"
+      ],
+      "@dwType/*": [
+        "dw/type/*"
+      ],
+      /** environment **/
+      "@env/*": [
+        "env/*"
+      ],
+      /** kunstWerk **/
+      "@kw/*": [
+        "kw/*"
+      ],
+      "@kwAuth/*": [
+        "kw/auth/*"
+      ],
+      "@kwClass/*": [
+        "kw/class/*"
+      ],
+      "@kwCtrl/*": [
+        "kw/ctrl/*"
+      ],
+      "@kwFcty/*": [
+        "kw/fcty/*"
+      ],
+      "@kwSrvc/*": [
+        "kw/srvc/*"
+      ],
+      "@kwStat/*": [
+        "kw/stat/*"
+      ],
+      "@kwType/*": [
+        "kw/type/*"
+      ],
+      /** bootstrap **/
+      "@kwBs/*": [
+        "kwBs/*"
+      ],
+      "@kwBsCtrl/*": [
+        "kwBs/ctrl/*"
+      ],
+      "@kwBsFcty/*": [
+        "kwBs/fcty/*"
+      ],
+      "@kwBsSrvc/*": [
+        "kwBs/srvc/*"
+      ],
+      "@kwBsStat/*": [
+        "kwBs/stat/*"
+      ],
+      "@kwBsState/*": [
+        "kwBs/state/*"
+      ],
+      "@kwBsStatus/*": [
+        "kwBs/status/*"
+      ],
+      /** Firebase **/
+      "@kwFb/*": [
+        "kwFb/*"
+      ],
+      "@kwFbClass/*": [
+        "kwFb/class/*"
+      ],
+      "@kwFbCtrl/*": [
+        "kwFb/ctrl/*"
+      ],
+      "@kwFbSrvc/*": [
+        "kwFb/srvc/*"
+      ],
+      "@kwFbState/*": [
+        "kwFb/state/*"
+      ],
+      /** kunstWerk for Angular **/
+      "@kwNg/*": [
+        "kwNg/*"
+      ],
+      "@kwNgCtrl/*": [
+        "kwNg/ctrl/*"
+      ],
+      "@kwNgCore/*": [
+        "kwNg/core/*"
+      ],
+      "@kwNgHttp/*": [
+        "kwNg/http/*"
+      ],
+      "@kwp/*": [
+        "kwNg/page/*"
+      ],
+      "@kwNgPage/*": [
+        "kwNg/page/*"
+      ],
+      "@kwNgState/*": [
+        "kwNg/state/*"
+      ],
+      "@kwNgStatus/*": [
+        "kwNg/status/*"
+      ],
+      "@kwNgType/*": [
+        "kwNg/type/*"
+      ],
+       /** kunstWerk for Angular UI**/
+      "@kwNgUi/*": [
+        "kwNgUi/*"
+      ],
+      "@kwNgUiCore/*": [
+        "kwNgUi/core/*"
+      ],
+      "@kwNgUiCtrl/*": [
+        "kwNgUi/ctrl/*"
+      ],
+      "@kwNgUiStat/*": [
+        "kwNgUi/stat/*"
+      ],
+      "@kwNgUiState/*": [
+        "kwNgUi/state/*"
+      ],
+      "@kwNgUiStatus/*": [
+        "kwNgUi/status/*"
+      ],
+      "@kwUi/*": [
+        "kwUi/*"
+      ],
+      "@kwUiClass/*": [
+        "kwUi/class/*"
+      ],
+      "@kwUiCtrl/*": [
+        "kwUi/ctrl/*"
+      ],
+      "@kwUiStat/*": [
+        "kwUi/stat/*"
+      ],
+      /** kunstWerk for Angular Ag-Grid**/
+      "@kwUiAgGrid/*": [
+        "kwUiAgGrid/*"
+      ],
+      "@kwNgUiAgGrid/*": [
+        "kwNgUiAgGrid/*"
+      ],
+      /** kunstWerk for Angular Fuse**/
+      "@kwNgUiFuse/*": [
+        "kwNgUiFuse/*"
+      ],
+      "@kwNgUiFuseCmp/*": [
+        "kwNgUiFuse/cmp/*"
+      ],
+      "@kwNgUiFuseCore/*": [
+        "kwNgUiFuse/core/*"
+      ],
+      "@kwNgUiFuseCtrl/*": [
+        "kwNgUiFuse/ctrl/*"
+      ],
+      "@kwNgUiFuseState/*": [
+        "kwNgUiFuse/state/*"
+      ]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,27 @@
+<svg:filter
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+    <kw-ui-svg-raw-fltr-blnd
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-svg-raw-fltr-blnd>
+
+    <kw-ui-svg-raw-fltr-cmp
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-svg-raw-fltr-cmp>
+
+    <kw-ui-svg-raw-fltr-fld
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-svg-raw-fltr-fld>
+
+</svg:filter>

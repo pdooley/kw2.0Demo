@@ -1,0 +1,28 @@
+{
+    "REGISTER": {
+        "ACCOUNT_NAME": "Account name",
+        "ALREADY_HAVE": "Already have an account?",
+        "CNAME": "CName",
+        "CREATE_NEW_ACCOUNT": "CREATE NEW ACCOUNT",
+        "CREATE_ORG": "CREATE ACCOUNT",
+        "DOMAIN": "Domain",
+        "EMAIL": "Email",
+        "LOGIN": "Log in",
+        "NAME": "Name",
+        "PASSWORD": "Password",
+        "PASSWORD_CONFIRM": "Password (Confirm)",
+        "READ_ACCEPT": "I read and accept",
+        "TERMS_COND": "terms and conditions",
+        "TITLE": "Register",
+        "ERRORS": {
+            "USERNAME_REQUIRED": "Username field is required",
+            "CNAME_REQUIRED": "CName field is required",
+            "DOMAIN_REQUIRED": "Domain field is required",
+            "EMAIL_REQUIRED": "Email field is required",
+            "EMAIL_MUST_VALID": "Email must be a valid e-mail address",
+            "PASSWORD_REQUIRED": "Password field is required",
+            "PASSWORD_CONFIRM_REQUIRED": "Password confirm field is required",
+            "TERMS_REQUIRED": "You must accept terms and conditions before submitting the form"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/**********************************************************************
+*
+* dw/crud/emplTimes/dwpEmplTimes.scss
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 Teppen Inc.
+*
+**********************************************************************/
+@import "src/@fuse/scss/fuse";
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

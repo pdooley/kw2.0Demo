@@ -1,0 +1,11 @@
+.default {
+  display: flex;
+  flex-direction: row;
+  height: 98px;
+  border-bottom: solid 0.5px var(--pale-grey-two);
+}
+
+.full-header {
+    width: 100%;
+    box-shadow: 0 0 3px 0 rgba(199, 209, 213, 0.2);
+}

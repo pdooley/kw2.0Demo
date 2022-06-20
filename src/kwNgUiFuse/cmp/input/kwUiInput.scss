@@ -1,0 +1,15 @@
+.default {
+  margin: auto 0 auto 52px;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  font-family: GothamRounded;
+
+  .mat-input-container {
+    padding-left: 60px;
+  }
+}
+
+.search-input ::ng-deep .mat-form-field-infix {
+  display: flex;
+}

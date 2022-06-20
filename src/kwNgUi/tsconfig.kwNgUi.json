@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.app.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "paths": {
+      "@kwNgUiFuse/*": [
+        "kwNgUiFuse/*"
+      ],
+      "@kwNgUiFuseCmp/*": [
+        "kwNgUiFuse/cmp/*"
+      ],
+      "@kwNgUiFuseCore/*": [
+        "kwNgUiFuse/core/*"
+      ],
+      "@kwNgUiFuseCtrl/*": [
+        "kwNgUiFuse/ctrl/*"
+      ],
+      "@kwNgUiFuseState/*": [
+        "kwNgUiFuse/state/*"
+      ]
+     }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

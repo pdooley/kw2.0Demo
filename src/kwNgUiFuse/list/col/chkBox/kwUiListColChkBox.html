@@ -1,0 +1,32 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/col/chkBox/kwUiListColChkBox.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+    <ng-container matColumnDef="checkbox"   >
+
+        <mat-header-cell *matHeaderCellDef>
+
+        </mat-header-cell>
+
+        <mat-cell *matCellDef="let contact">
+
+            <mat-checkbox [(ngModel)]="checkboxes[contact.id]"
+                          (ngModelChange)="onSelectedChange(contact.id)"
+                          (click)="$event.stopPropagation()"    >
+            </mat-checkbox>
+
+        </mat-cell>
+
+    </ng-container>
+

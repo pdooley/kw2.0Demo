@@ -1,0 +1,59 @@
+
+<kw-ui-hdr
+    *ngIf="hdr"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-hdr>
+
+
+<kw-ui-crud
+    *ngIf="crud"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-crud>
+
+
+<kw-ui-form
+    *ngIf="form"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-form>
+
+
+<kw-ui-util
+    *ngIf="util"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-util>
+
+
+<kw-ui-bdy
+    *ngIf="bdy"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-bdy>
+
+
+<kw-ui-ftr
+    *ngIf="ftr"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-ftr>

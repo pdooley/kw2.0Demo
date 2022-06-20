@@ -1,0 +1,44 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/crud/srch/kwUiCrudSrch.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<kw-ui-crud-srch-date
+    *ngIf="date"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-crud-srch-date>
+
+
+<kw-ui-crud-srch-slct
+    *ngIf="slct"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-crud-srch-slct>
+
+
+<kw-ui-crud-srch-str
+    *ngIf="str"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+
+</kw-ui-crud-srch-str>
+

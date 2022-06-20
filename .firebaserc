@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fbDeploy",
+    "fbDeploy": "fbdeploy-5fc6c"
+  }
+}

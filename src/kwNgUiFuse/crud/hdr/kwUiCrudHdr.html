@@ -1,0 +1,41 @@
+<!--
+/**********************************************************************
+*
+* kwNgUi/crud/hdr/kwUiCrudHdr.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+
+<kw-ui-crud-title
+    *ngIf="title"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view"
+    fxLayout="row"
+    fxLayoutAlign="start center"    >
+
+</kw-ui-crud-title>
+
+<kw-ui-crud-srch
+    *ngIf="srch"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view"
+    class="ml-sm-32"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    fxFlex  >
+
+</kw-ui-crud-srch>
+
+

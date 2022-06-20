@@ -1,0 +1,84 @@
+{
+  "user": {
+    "_id": "5a77feeb80366f00143507d6",
+    "updatedAt": "2018-03-01T00:42:24.982Z",
+    "createdAt": "2018-02-05T06:51:23.322Z",
+    "type": "associate",
+    "username": "Ironforge4",
+    "provider": "local",
+    "email": "ironforgedev4@gmail.com",
+    "password": "$2a$10$SjdFMgR2CKZ7pCssaUVjs.w.nJirMMSI3Y1520sYKytiFcKjl02D.",
+    "__v": 9,
+    "firm": "5a77fdb880366f00143507cc",
+    "position": "CEO",
+    "work_email": "sum@ironforge.co",
+    "fullname": "Sumner Webster",
+    "recent_searches": [],
+    "tasks_lists": {
+      "tasks": [],
+      "sections": []
+    },
+    "account_complete": true,
+    "matters": [
+      {
+        "matter": "5a7800bc80366f00143507d7",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7800bc80366f00143507d9"
+      },
+      {
+        "matter": "5a7800bc80366f00143507d7",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7800bd80366f00143507dc"
+      },
+      {
+        "matter": "5a7d4b2ce134c50014c5bb6b",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7d4b2de134c50014c5bb6d"
+      },
+      {
+        "matter": "5a7d4b2ce134c50014c5bb6b",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7d4b2ee134c50014c5bb72"
+      },
+      {
+        "matter": "5a89e473379ec200140f39ea",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a89e473379ec200140f39eb"
+      },
+      {
+        "matter": "5a89e473379ec200140f39ea",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a89e474379ec200140f39ee"
+      },
+      {
+        "matter": "5a8b822bd7fcda001409632f",
+        "_id": "5a93334754a7570014cd9d04"
+      },
+      {
+        "matter": "5a8b822bd7fcda001409632f",
+        "_id": "5a93334754a7570014cd9d05"
+      },
+      {
+        "matter": "5a974c6e2f6bf60014e4f40a",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a974c6e2f6bf60014e4f40c"
+      },
+      {
+        "matter": "5a974c6e2f6bf60014e4f40a",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a974c702f6bf60014e4f411"
+      }
+    ],
+    "experience": [],
+    "education": [],
+    "specialty_tags": [],
+    "name": {
+      "last": "Webster",
+      "first": "Sumner"
+    },
+    "cover_photo": "https://www.lanecc.edu/sites/default/files/disability/blank_person.png",
+    "profile_picture": "https://www.lanecc.edu/sites/default/files/disability/blank_person.png",
+    "firm_values": null,
+    "id": "5a77feeb80366f00143507d6"
+  }
+}

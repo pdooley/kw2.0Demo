@@ -1,0 +1,31 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/col/name/kwUiListColName.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+    <ng-container matColumnDef="name"   >
+
+        <mat-header-cell *matHeaderCellDef>
+            Name
+        </mat-header-cell>
+
+        <mat-cell *matCellDef="let data">
+
+            <p class="text-truncate font-weight-600">
+                {{data.sFirstName}} {{data.sLastName}}
+            </p>
+
+        </mat-cell>
+
+    </ng-container>
+

@@ -1,0 +1,279 @@
+Index: src/dw/state/hourInp/dwHourInpCtrlc.ts
+===================================================================
+--- src/dw/state/hourInp/dwHourInpCtrlc.ts	(revision 04890c60c09687dc26841fbc1a21bdc64b583b8a)
++++ src/dw/state/hourInp/dwHourInpCtrlc.ts	(revision 04890c60c09687dc26841fbc1a21bdc64b583b8a)
+@@ -1,274 +0,0 @@
+-//@formatter:off
+-import {Component}              from '@angular/core';
+-
+-import * as _                   from 'lodash';
+-
+-import {kw}                     from "@kw/kw";
+-import {kwLog}                  from "@kw/kwLog";
+-import {kwNgUiCtrlPubSub}       from "@kwNgUiCtrl/kwNgUiCtrlPubSub";
+-import {kwNgUiCtrlSubInit}      from "@kwNgUiCtrl/kwNgUiCtrlSubInit";
+-import {kwNgUiCtrlSubView}      from "@kwNgUiCtrl/kwNgUiCtrlSubView";
+-
+-import {dwHourInpStInit,
+-        dwHourInpStView}        from "./dwHourInpSt";
+-
+-
+-const sEMPLOYEES: string        = "employees";
+-const sJOBS: string             = "jobs";
+-const sSCHEDULES: string        = "schedules";
+-const sSHIFT_TYPES: string      = "shiftTypes";
+-const sSTATE:   string          = "hourInp";
+-const SRCS:     string[]        = [sEMPLOYEES, sJOBS, sSCHEDULES, sSHIFT_TYPES];
+-
+-//@formatter:off
+-
+-
+-
+-@Component({selector: 'dw-hourly-input-ctrl-init', template: ``})
+-export class dwHourInpCtrlInit extends kwNgUiCtrlSubInit
+-{
+-    constructor(init: dwHourInpStInit)
+-    {super(init, sSTATE)}
+-}
+-
+-
+-@Component({selector: 'dw-hourly-input-ctrl-pub-sub', template: ``})
+-export class dwHourInpCtrlPubSub extends kwNgUiCtrlPubSub
+-{
+-
+-    private dataIn: object;
+-
+-    private empls: object[];
+-    private jobs: object[];
+-    private shifts: object[];
+-
+-
+-    private main: any;
+-
+-
+-    constructor()
+-    {super(sSTATE, SRCS)}
+-
+-
+-
+-    protected loadTables(sTopic: string, dataIn: any): void
+-    {
+-        const log: kwLog = new kwLog(this.sClass, "loadTables");
+-        console.log(log.called());
+-
+-
+-        if (!kw.isString(sTopic))
+-        {
+-            console.error(log.invalid("sTopic"));
+-            return;
+-        }
+-
+-
+-        if (!kw.isValid(dataIn))
+-        {
+-            console.error(log.invalid("dataIn"));
+-            return;
+-        }
+-
+-
+-        //console.info(log.isObj(sTopic), dataIn);
+-
+-
+-        if (!kw.isValid(this.pubSub))
+-        {
+-            console.error(log.invalid("pubSub"));
+-            return;
+-        }
+-        //console.info(log.isObj("pubSub"), this.pubSub);
+-
+-
+-        if(_.startsWith(sTopic, sSCHEDULES))
+-        {
+-            this.dataIn = dataIn;
+-            //console.info(log.isObj(sSCHEDULES), this.dataIn);
+-        }
+-
+-
+-        else if(_.startsWith(sTopic, sJOBS))
+-        {
+-            //console.info(log.isObj(sJOBS), dataIn);
+-            this.jobs = dataIn.data;
+-        }
+-
+-
+-        else if(_.startsWith(sTopic, sEMPLOYEES))
+-        {
+-            //console.info(log.isObj(sEMPLOYEES), dataIn);
+-            this.empls = dataIn.data;
+-        }
+-
+-        else if(_.startsWith(sTopic, sSHIFT_TYPES))
+-        {
+-            //console.info(log.isObj(sSHIFT_TYPES), this.dataIn);
+-            this.shifts = dataIn.data;
+-        }
+-
+-        else
+-        {
+-            console.error(log.invalid(sTopic));
+-            return;
+-        }
+-
+-        if (!kw.isValid(this.dataIn) ||
+-            !kw.isArray(this.empls) ||
+-            !kw.isArray(this.jobs) ||
+-            !kw.isArray(this.shifts) )
+-        {
+-
+-            //console.info(log.info("not ready"));
+-        }
+-
+-        //console.info(log.info("all ready"));
+-        //console.info(log.isObj(sSCHEDULES), this.dataIn);
+-        //console.info(log.isObj(sJOBS), this.jobs);
+-        //console.info(log.isObj(sEMPLOYEES), this.empls);
+-        //console.info(log.isObj(sSHIFT_TYPES), this.shifts);
+-
+-        const that = this;
+-
+-        let dataOut = [];
+-
+-        _.forEach(this.dataIn, function (row, i)
+-        {
+-            if (_.isNull(row))
+-            {
+-                console.error(log.invalid("row"));
+-                return;
+-            }
+-            //console.info(log.isObj("row"), row);
+-
+-            const sJob = that.toString(row, that.jobMap, "job", ["desc"]);
+-            const sShift = that.toString(row, that.shiftMap, "shift", ["desc"]);
+-            const sEmpl = that.toString(row, that.emplMap, "employee", ["firstName", "lastName"]);
+-
+-            let rowNew = _.cloneDeep(row);
+-
+-            let rowMod = {
+-                "data": {
+-                    "Job": sJob,
+-                    "shift": sShift,
+-                    "employee": sEmpl
+-                }
+-            };
+-
+-            //console.info(log.isObj("rowMod"), rowMod);
+-            
+-            
+-            _.merge(rowNew, rowMod);
+-            //console.info(log.isObj("rowNew"), rowNew);
+-
+-
+-            dataOut.push(rowNew);
+-
+-        });
+-
+-        //console.info(log.isObj("dataOut"), dataOut);
+-    }
+-
+-    private toString(
+-        row: object,
+-        map: object,
+-        sId: string,
+-        sParams: string[] ): string
+-    {
+-        const log: kwLog = new kwLog(this.sClass, "toString");
+-        console.log(log.called());
+-
+-
+-        if (!kw.isValid(row))
+-        {
+-            console.error(log.invalid("row"));
+-            return "Unknown Id - row invalid";
+-        }
+-        //console.info(log.isObj("row"), row);
+-
+-
+-        if (!kw.isValid(map))
+-        {
+-            console.error(log.invalid("map"));
+-            return "Unknown Id - map invalid";
+-        }
+-        //console.info(log.isObj("map"), map);
+-
+-
+-        if (!_.isString(sId))
+-        {
+-            console.error(log.invalid("sId"));
+-            return "unknown id - sId invalid";
+-        }
+-        //console.info(log.is("sId", sId));
+-
+-
+-        if (!_.isArray(sParams))
+-        {
+-            console.error(log.invalid("sParams"));
+-            return "unknown id - sParams invalid";
+-        }
+-        //console.info(log.is("sParams", sParams));
+-
+-
+-        const nId = row["data"][sId];
+-        if (!_.isNumber(nId))
+-        {
+-            console.error(log.invalid("nId"));
+-            return "Unknown Id[" + sParams + "]";
+-        }
+-        //console.info(log.is("nId", nId));
+-
+-
+-        const val = map[nId];
+-        if (_.isNull(val))
+-        {
+-            console.error(log.invalid("val"));
+-            return "Unknown Id[" + nId + "]";
+-        }
+-        //console.info(log.isObj("val"), val);
+-
+-
+-        const data = val[1];
+-        if (!kw.isValid(data))
+-        {
+-            console.error(log.invalid("data"));
+-            return "Unknown Id[" + nId + "]";
+-        }
+-        //console.info(log.isObj("data"), data);
+-
+-
+-        let sVals: string = "";
+-
+-        _.forEach(sParams, function (sParam, i)
+-        {
+-            let sVal = data[sParam];
+-            if (!_.isString(sVal))
+-            {
+-                console.error(log.invalid("sVal"));
+-                sVal = "unknown id[" + sParam + "]";
+-            }
+-            //console.info(log.isObj("sVal"), sVal);
+-
+-            if (sVals.length > 0)
+-            {
+-                sVals += " ";
+-            }
+-            sVals += sVal;
+-        });
+-
+-        //console.info(log.isObj("sVals"), sVals);
+-
+-        return sVals;
+-    }
+-
+-}
+-
+-
+-@Component({selector: 'dw-hourly-input-ctrl-view', template: ``})
+-export class dwHourInpCtrlView extends kwNgUiCtrlSubView
+-{
+-    constructor(view: dwHourInpStView)
+-    {super(view, sSTATE)}
+-}

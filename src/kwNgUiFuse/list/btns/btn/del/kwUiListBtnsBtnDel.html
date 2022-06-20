@@ -1,0 +1,40 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/btns/del/kwUiListBtnsBtnMore.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+<div *ngIf="view"
+     [class]="sStyl"    >
+
+    <div>{{sComp}}</div>
+
+    <mat-menu #delMenu="matMenu">
+
+        <button mat-menu-item
+                aria-label="remove"
+                (click)="delete(contact)"   >
+
+            <mat-icon>
+                delete
+            </mat-icon>
+
+            <span>
+                Remove
+            </span>
+
+        </button>
+
+    </mat-menu>
+
+</div>
+
+

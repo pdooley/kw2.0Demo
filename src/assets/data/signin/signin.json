@@ -1,0 +1,85 @@
+{
+  "user": {
+    "_id": "5a77feeb80366f00143507d6",
+    "updatedAt": "2018-03-01T00:42:24.982Z",
+    "createdAt": "2018-02-05T06:51:23.322Z",
+    "type": "associate",
+    "username": "Ironforge4",
+    "provider": "local",
+    "email": "ironforgedev4@gmail.com",
+    "password": "$2a$10$SjdFMgR2CKZ7pCssaUVjs.w.nJirMMSI3Y1520sYKytiFcKjl02D.",
+    "__v": 9,
+    "firm": "5a77fdb880366f00143507cc",
+    "position": "CEO",
+    "work_email": "sum@ironforge.co",
+    "fullname": "Sumner Webster",
+    "recent_searches": [],
+    "tasks_lists": {
+      "tasks": [],
+      "sections": []
+    },
+    "account_complete": true,
+    "matters": [
+      {
+        "matter": "5a7800bc80366f00143507d7",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7800bc80366f00143507d9"
+      },
+      {
+        "matter": "5a7800bc80366f00143507d7",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7800bd80366f00143507dc"
+      },
+      {
+        "matter": "5a7d4b2ce134c50014c5bb6b",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7d4b2de134c50014c5bb6d"
+      },
+      {
+        "matter": "5a7d4b2ce134c50014c5bb6b",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a7d4b2ee134c50014c5bb72"
+      },
+      {
+        "matter": "5a89e473379ec200140f39ea",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a89e473379ec200140f39eb"
+      },
+      {
+        "matter": "5a89e473379ec200140f39ea",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a89e474379ec200140f39ee"
+      },
+      {
+        "matter": "5a8b822bd7fcda001409632f",
+        "_id": "5a93334754a7570014cd9d04"
+      },
+      {
+        "matter": "5a8b822bd7fcda001409632f",
+        "_id": "5a93334754a7570014cd9d05"
+      },
+      {
+        "matter": "5a974c6e2f6bf60014e4f40a",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a974c6e2f6bf60014e4f40c"
+      },
+      {
+        "matter": "5a974c6e2f6bf60014e4f40a",
+        "team": "5a77fdb880366f00143507cc",
+        "_id": "5a974c702f6bf60014e4f411"
+      }
+    ],
+    "experience": [],
+    "education": [],
+    "specialty_tags": [],
+    "name": {
+      "last": "Webster",
+      "first": "Sumner"
+    },
+    "cover_photo": "https://www.lanecc.edu/sites/default/files/disability/blank_person.png",
+    "profile_picture": "https://www.lanecc.edu/sites/default/files/disability/blank_person.png",
+    "firm_values": null,
+    "id": "5a77feeb80366f00143507d6"
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyIkX18iOnsic3RyaWN0TW9kZSI6dHJ1ZSwic2VsZWN0ZWQiOnt9LCJnZXR0ZXJzIjp7fSwiX2lkIjoiNWE3N2ZlZWI4MDM2NmYwMDE0MzUwN2Q2Iiwid2FzUG9wdWxhdGVkIjpmYWxzZSwiYWN0aXZlUGF0aHMiOnsicGF0aHMiOnsicHJvdmlkZXIiOiJpbml0IiwiZW1haWwiOiJpbml0IiwicHJvZmlsZV9waWN0dXJlIjoiaW5pdCIsImNvdmVyX3Bob3RvIjoiaW5pdCIsInNwZWNpYWx0eV90YWdzIjoiaW5pdCIsImVkdWNhdGlvbiI6ImluaXQiLCJleHBlcmllbmNlIjoiaW5pdCIsIm1hdHRlcnMiOiJpbml0IiwiYWNjb3VudF9jb21wbGV0ZSI6ImluaXQiLCJ0YXNrc19saXN0cy5zZWN0aW9ucyI6ImluaXQiLCJ0YXNrc19saXN0cy50YXNrcyI6ImluaXQiLCJyZWNlbnRfc2VhcmNoZXMiOiJpbml0IiwibmFtZS5maXJzdCI6ImluaXQiLCJuYW1lLmxhc3QiOiJpbml0IiwiZnVsbG5hbWUiOiJpbml0Iiwid29ya19lbWFpbCI6ImluaXQiLCJwb3NpdGlvbiI6ImluaXQiLCJmaXJtIjoiaW5pdCIsIl9fdiI6ImluaXQiLCJwYXNzd29yZCI6ImluaXQiLCJ1c2VybmFtZSI6ImluaXQiLCJ0eXBlIjoiaW5pdCIsImNyZWF0ZWRBdCI6ImluaXQiLCJ1cGRhdGVkQXQiOiJpbml0IiwiX2lkIjoiaW5pdCJ9LCJzdGF0ZXMiOnsiaWdub3JlIjp7fSwiZGVmYXVsdCI6e30sImluaXQiOnsibmFtZS5maXJzdCI6dHJ1ZSwibmFtZS5sYXN0Ijp0cnVlLCJmdWxsbmFtZSI6dHJ1ZSwid29ya19lbWFpbCI6dHJ1ZSwicG9zaXRpb24iOnRydWUsImZpcm0iOnRydWUsIl9fdiI6dHJ1ZSwicHJvZmlsZV9waWN0dXJlIjp0cnVlLCJjb3Zlcl9waG90byI6dHJ1ZSwic3BlY2lhbHR5X3RhZ3MiOnRydWUsImVkdWNhdGlvbiI6dHJ1ZSwiZXhwZXJpZW5jZSI6dHJ1ZSwibWF0dGVycyI6dHJ1ZSwiYWNjb3VudF9jb21wbGV0ZSI6dHJ1ZSwidGFza3NfbGlzdHMuc2VjdGlvbnMiOnRydWUsInRhc2tzX2xpc3RzLnRhc2tzIjp0cnVlLCJyZWNlbnRfc2VhcmNoZXMiOnRydWUsInBhc3N3b3JkIjp0cnVlLCJlbWFpbCI6dHJ1ZSwicHJvdmlkZXIiOnRydWUsInVzZXJuYW1lIjp0cnVlLCJ0eXBlIjp0cnVlLCJjcmVhdGVkQXQiOnRydWUsInVwZGF0ZWRBdCI6dHJ1ZSwiX2lkIjp0cnVlfSwibW9kaWZ5Ijp7fSwicmVxdWlyZSI6e319LCJzdGF0ZU5hbWVzIjpbInJlcXVpcmUiLCJtb2RpZnkiLCJpbml0IiwiZGVmYXVsdCIsImlnbm9yZSJdfSwicGF0aHNUb1Njb3BlcyI6e30sImVtaXR0ZXIiOnsiZG9tYWluIjpudWxsLCJfZXZlbnRzIjp7InNhdmUiOltudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF0sImlzTmV3IjpbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGxdfSwiX2V2ZW50c0NvdW50IjoyLCJfbWF4TGlzdGVuZXJzIjowfSwiJG9wdGlvbnMiOnRydWV9LCJpc05ldyI6ZmFsc2UsIl9kb2MiOnsicHJvZmlsZV9waWN0dXJlIjoiaHR0cHM6Ly93d3cubGFuZWNjLmVkdS9zaXRlcy9kZWZhdWx0L2ZpbGVzL2Rpc2FiaWxpdHkvYmxhbmtfcGVyc29uLnBuZyIsImNvdmVyX3Bob3RvIjoiaHR0cHM6Ly93d3cubGFuZWNjLmVkdS9zaXRlcy9kZWZhdWx0L2ZpbGVzL2Rpc2FiaWxpdHkvYmxhbmtfcGVyc29uLnBuZyIsIm5hbWUiOnsiZmlyc3QiOiJTdW1uZXIiLCJsYXN0IjoiV2Vic3RlciJ9LCJzcGVjaWFsdHlfdGFncyI6W10sImVkdWNhdGlvbiI6W10sImV4cGVyaWVuY2UiOltdLCJtYXR0ZXJzIjpbeyJtYXR0ZXIiOiI1YTc4MDBiYzgwMzY2ZjAwMTQzNTA3ZDciLCJ0ZWFtIjoiNWE3N2ZkYjg4MDM2NmYwMDE0MzUwN2NjIiwiX2lkIjoiNWE3ODAwYmM4MDM2NmYwMDE0MzUwN2Q5In0seyJtYXR0ZXIiOiI1YTc4MDBiYzgwMzY2ZjAwMTQzNTA3ZDciLCJ0ZWFtIjoiNWE3N2ZkYjg4MDM2NmYwMDE0MzUwN2NjIiwiX2lkIjoiNWE3ODAwYmQ4MDM2NmYwMDE0MzUwN2RjIn0seyJtYXR0ZXIiOiI1YTdkNGIyY2UxMzRjNTAwMTRjNWJiNmIiLCJ0ZWFtIjoiNWE3N2ZkYjg4MDM2NmYwMDE0MzUwN2NjIiwiX2lkIjoiNWE3ZDRiMmRlMTM0YzUwMDE0YzViYjZkIn0seyJtYXR0ZXIiOiI1YTdkNGIyY2UxMzRjNTAwMTRjNWJiNmIiLCJ0ZWFtIjoiNWE3N2ZkYjg4MDM2NmYwMDE0MzUwN2NjIiwiX2lkIjoiNWE3ZDRiMmVlMTM0YzUwMDE0YzViYjcyIn0seyJtYXR0ZXIiOiI1YTg5ZTQ3MzM3OWVjMjAwMTQwZjM5ZWEiLCJ0ZWFtIjoiNWE3N2ZkYjg4MDM2NmYwMDE0MzUwN2NjIiwiX2lkIjoiNWE4OWU0NzMzNzllYzIwMDE0MGYzOWViIn0seyJtYXR0ZXIiOiI1YTg5ZTQ3MzM3OWVjMjAwMTQwZjM5ZWEiLCJ0ZWFtIjoiNWE3N2ZkYjg4MDM2NmYwMDE0MzUwN2NjIiwiX2lkIjoiNWE4OWU0NzQzNzllYzIwMDE0MGYzOWVlIn0seyJtYXR0ZXIiOiI1YThiODIyYmQ3ZmNkYTAwMTQwOTYzMmYiLCJfaWQiOiI1YTkzMzM0NzU0YTc1NzAwMTRjZDlkMDQifSx7Im1hdHRlciI6IjVhOGI4MjJiZDdmY2RhMDAxNDA5NjMyZiIsIl9pZCI6IjVhOTMzMzQ3NTRhNzU3MDAxNGNkOWQwNSJ9LHsibWF0dGVyIjoiNWE5NzRjNmUyZjZiZjYwMDE0ZTRmNDBhIiwidGVhbSI6IjVhNzdmZGI4ODAzNjZmMDAxNDM1MDdjYyIsIl9pZCI6IjVhOTc0YzZlMmY2YmY2MDAxNGU0ZjQwYyJ9LHsibWF0dGVyIjoiNWE5NzRjNmUyZjZiZjYwMDE0ZTRmNDBhIiwidGVhbSI6IjVhNzdmZGI4ODAzNjZmMDAxNDM1MDdjYyIsIl9pZCI6IjVhOTc0YzcwMmY2YmY2MDAxNGU0ZjQxMSJ9XSwiYWNjb3VudF9jb21wbGV0ZSI6dHJ1ZSwidGFza3NfbGlzdHMiOnsic2VjdGlvbnMiOltdLCJ0YXNrcyI6W119LCJyZWNlbnRfc2VhcmNoZXMiOltdLCJmdWxsbmFtZSI6IlN1bW5lciBXZWJzdGVyIiwid29ya19lbWFpbCI6InN1bUBpcm9uZm9yZ2UuY28iLCJwb3NpdGlvbiI6IkNFTyIsImZpcm0iOiI1YTc3ZmRiODgwMzY2ZjAwMTQzNTA3Y2MiLCJfX3YiOjksInBhc3N3b3JkIjoiJDJhJDEwJFNqZEZNZ1IyQ0taN3BDc3NhVVZqcy53Lm5KaXJNTVNJM1kxNTIwc1lLeXRpRmNLamwwMkQuIiwiZW1haWwiOiJpcm9uZm9yZ2VkZXY0QGdtYWlsLmNvbSIsInByb3ZpZGVyIjoibG9jYWwiLCJ1c2VybmFtZSI6Iklyb25mb3JnZTQiLCJ0eXBlIjoiYXNzb2NpYXRlIiwiY3JlYXRlZEF0IjoiMjAxOC0wMi0wNVQwNjo1MToyMy4zMjJaIiwidXBkYXRlZEF0IjoiMjAxOC0wMy0wMVQwMDo0MjoyNC45ODJaIiwiX2lkIjoiNWE3N2ZlZWI4MDM2NmYwMDE0MzUwN2Q2In0sIiRpbml0Ijp0cnVlLCIkJHBvcHVsYXRlZFZpcnR1YWxzIjp7fSwiaWF0IjoxNTIwNjEzMTI5LCJleHAiOjE1MjEwNDUxMjl9.NTdLxUSpyzjwpRDnuB5GTWu0ERcilhMe6r7lmdERvxk"
+}

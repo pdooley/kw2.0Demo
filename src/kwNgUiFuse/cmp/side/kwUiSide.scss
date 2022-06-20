@@ -1,0 +1,23 @@
+
+.default {
+    height: 100%;
+
+    .nb-container {
+        flex-direction: column;
+        display: flex;
+        place-content: center space-around;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .sidenav {
+        width: 82.5px;
+        height: 100%;
+    }
+
+    .logo {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}

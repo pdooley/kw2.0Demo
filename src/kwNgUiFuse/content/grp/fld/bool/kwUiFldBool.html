@@ -1,0 +1,31 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/form/field/bool/kwUiFieldBool.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<div
+    fxLayout="row"
+    fxLayoutAlign="start start"
+    class="p-50"   >
+
+
+    <mat-slide-toggle
+        [(ngModel)]="bIsChecked"
+        (change)="onChanged($event)" >
+
+        {{sText}}
+
+    </mat-slide-toggle>
+
+
+</div>

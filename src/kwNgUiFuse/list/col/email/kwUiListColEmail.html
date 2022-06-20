@@ -1,0 +1,39 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/col/email/kwUiListColEmail.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+<div *ngIf="view"
+     [class]="sStyl"    >
+
+    <div>{{sComp}}</div>
+    {{view.sText}}
+
+    <ng-container matColumnDef="email"   >
+
+        <mat-header-cell *matHeaderCellDef fxHide fxShow.gt-sm>
+            Email
+        </mat-header-cell>
+
+        <mat-cell *matCellDef="let contact"
+                  fxHide
+                  fxShow.gt-sm  >
+
+            <p class="email text-truncate">
+                {{contact.email}}
+            </p>
+
+        </mat-cell>
+
+    </ng-container>
+
+</div>

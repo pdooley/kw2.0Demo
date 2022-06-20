@@ -1,0 +1,28 @@
+
+.default {
+    width: 40%;
+    background-color: var(--white-two);
+    /* border-bottom: solid 0.5px var(--pale-grey-two); */
+    margin-top: auto;
+    padding: 0 20px 10px;
+    display: block;
+    font-size: 16.6px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-justify-content: flex-end;
+    color: #c0c0c0;
+    font-family: GothamRounded-Light;
+    border: none;
+    text-align: center;
+    max-width: 216px;
+
+    &:hover {
+        border-bottom: solid 3px var(--bright-orange);
+        color: var(--bright-orange);
+    }
+
+    &.active {
+        color: var(--bright-orange);
+        border-bottom: solid 3px var(--bright-orange);
+    }
+}

@@ -1,0 +1,31 @@
+<div
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+
+    <a [routerLink]="sLink">
+
+        <div>{{sComp}}</div>
+
+        <kw-ui-img
+            *ngIf="img"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="view">
+
+        </kw-ui-img>
+
+        <kw-ui-title
+            *ngIf="title"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="view">
+
+        </kw-ui-title>
+
+    </a>
+
+</div>

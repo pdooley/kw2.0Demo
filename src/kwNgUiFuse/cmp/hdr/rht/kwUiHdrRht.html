@@ -1,0 +1,38 @@
+<div *ngIf="view"
+     [class]="sStyl"
+     [id]="sId"
+     fxLayout="row" fxLayoutAlign="space-between center">
+
+    <div>{{sComp}}</div>
+
+    {{sText}}
+
+    <kw-ui-title
+        *ngIf="title"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-title>
+
+    <kw-ui-btn
+        *ngIf="btn"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-btn>
+
+    <kw-ui-img
+        *ngIf="img"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-img>
+
+
+</div>

@@ -1,0 +1,23 @@
+<mat-list-item
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId"
+    matRipple>
+
+    <div>
+        {{sComp}}
+    </div>
+
+    <mat-checkbox
+        (change)="onChanged($event)"
+        [checked]="inits">
+
+        <mat-icon>
+            {{sIcon}}
+        </mat-icon>
+
+        {{sText}}
+
+    </mat-checkbox>
+
+</mat-list-item>

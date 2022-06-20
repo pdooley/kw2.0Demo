@@ -1,0 +1,39 @@
+<div
+    *ngIf="view"
+    [class]="sStyl"
+    [id]="sId">
+
+    <div>
+        {{sComp}}
+    </div>
+
+    <mat-list
+        fxFlex="grow"
+        furyScrollbar
+        class="navigation">
+
+        <div matSubheader>
+            {{sText}}
+        </div>
+
+        <kw-ui-title
+            *ngIf="title"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="view">
+
+        </kw-ui-title>
+
+        <kw-ui-opts-chk
+            *ngFor="let chk of chks"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="chk">
+
+        </kw-ui-opts-chk>
+
+    </mat-list>
+
+</div>

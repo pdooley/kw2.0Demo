@@ -1,0 +1,22 @@
+/**********************************************************************
+*
+* kwNgUi/page/metrics/kwNgUiMetrics.scss
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corp.
+*
+**********************************************************************/
+@import "src/@fuse/scss/fuse";
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

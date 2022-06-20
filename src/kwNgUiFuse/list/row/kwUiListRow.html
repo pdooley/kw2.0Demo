@@ -1,0 +1,35 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/row/kwUiListRow.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+<div *ngIf="view"
+     [class]="sStyl"    >
+
+    <div>{{sComp}}</div>
+    {{view.sText}}
+
+    <mat-header-row *matHeaderRowDef="displayedColumns">
+
+    </mat-header-row>
+
+    <mat-row *matRowDef="let contact; columns: displayedColumns;"
+             class="contact"
+             (click)="editContact(contact)"
+             [ngClass]="{'accent-50':checkboxes[contact.id]}"
+             matRipple
+             [@animate]="{value:'*',params:{y:'100%'}}" >
+    </mat-row>
+
+</div>
+
+

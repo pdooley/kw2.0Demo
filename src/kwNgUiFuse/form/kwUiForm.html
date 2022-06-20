@@ -1,0 +1,48 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/form/kwUiForm.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+
+-->
+<div class="content-wrapper">
+
+
+    <kw-ui-toolbar
+        *ngIf="toolbar"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-toolbar>
+
+
+    <kw-ui-content
+        *ngIf="content"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view">
+
+    </kw-ui-content>
+
+
+    <kw-ui-actions
+        *ngIf="actions"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view"  >
+
+    </kw-ui-actions>
+
+</div>

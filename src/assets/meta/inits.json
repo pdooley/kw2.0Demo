@@ -1,0 +1,358 @@
+[
+  {
+    "sId": "billings",
+    "init": {
+    }
+  },
+  {
+    "sId": "company",
+    "init": {
+    }
+  },
+  {
+    "sId": "companys",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "employee",
+    "init": {
+    }
+  },
+  {
+    "sId": "employees",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "firstName": "",
+          "lastName": "",
+          "address": "",
+          "city": "",
+          "province": "ON",
+          "postalCode": "",
+          "phoneNumber1": "",
+          "phoneNumber2": "",
+          "company": "",
+          "schedule": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "emplPro",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "firstName": "",
+          "lastName": "",
+          "address": "",
+          "city": "",
+          "postalCode": "",
+          "province": "ON",
+          "phoneNumber1": "",
+          "phoneNumber2": "",
+          "company": "",
+          "schedule": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "emplTimes",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "firstName": "",
+          "lastName": "",
+          "address": "",
+          "city": "",
+          "postalCode": "",
+          "province": "ON",
+          "phoneNumber1": "",
+          "phoneNumber2": "",
+          "company": "",
+          "schedule": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "job",
+    "init": {
+     }
+  },
+  {
+    "sId": "jobs",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "company": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "metric",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "metrics",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "mgmtPayrolls",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "music",
+    "init": {
+    }
+  },
+  {
+    "sId": "musics",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "nStart": 0,
+          "sCountry": "",
+          "sType": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "payrolls",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "province",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "provinces",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "reasons",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "reason",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "sched",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "job": "",
+          "employee": "",
+          "shift": "",
+          "mon": true,
+          "tue": true,
+          "wed": true,
+          "thu": true,
+          "fri": true,
+          "sat": false,
+          "sun": false
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedule",
+    "init": {
+    }
+  },
+  {
+    "sId": "schedules",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "job": "",
+          "employee": "",
+          "mon": true,
+          "tue": true,
+          "wed": true,
+          "thu": true,
+          "fri": true,
+          "sat": false,
+          "sun": false,
+          "shift": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "schedFulls",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "job": "",
+          "employee": "",
+          "mon": true,
+          "tue": true,
+          "wed": true,
+          "thu": true,
+          "fri": true,
+          "sat": false,
+          "sun": false,
+          "shift": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "shiftType",
+    "init": {
+    }
+  },
+  {
+    "sId": "shiftTypes",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "name": "",
+          "desc": ""
+        }
+      }
+    }
+  },
+  {
+    "sId": "timeSheet",
+    "init": {
+    }
+  },
+  {
+    "sId": "timeSheets",
+    "init": {
+      "rec": {
+        "id": "",
+        "data": {
+          "employee": "",
+          "schedule": "",
+          "start": null,
+          "mon": {
+            "hours": 8,
+            "reason":"",
+            "desc": ""
+          },
+          "tue": {
+            "hours": 8,
+            "reason":"",
+            "desc": ""
+          },
+          "wed": {
+            "hours": 8,
+            "reason":"",
+            "desc": ""
+          },
+          "thu": {
+            "hours": 8,
+            "reason":"",
+            "desc": ""
+          },
+          "fri": {
+            "hours": 8,
+            "reason":"",
+            "desc": ""
+          },
+          "sat": {
+            "hours": 0,
+            "reason":"",
+            "desc": ""
+          },
+          "sun": {
+            "hours": 0,
+            "reason":"",
+            "desc": ""
+          }
+        }
+      }
+    }
+  }
+]

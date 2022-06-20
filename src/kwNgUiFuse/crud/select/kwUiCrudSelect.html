@@ -1,0 +1,129 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/crud/srch/kwUiCrudSelect.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<div
+    *ngIf="bHasSelected">
+
+    <div
+        class="close-button-wrapper"
+        fxFlex="0 1 auto"
+        fxFlex.gt-sm="220px"
+        (click)="onOff()"    >
+
+        <button
+            class="p-8"
+            mat-button
+            fxLayout="row"
+            fxLayoutAlign="start center"    >
+
+            <mat-icon
+                class="mr-8"    >
+
+                arrow_back
+
+            </mat-icon>
+
+            <span
+                class="text-uppercase"  >
+
+                Back
+
+            </span>
+
+        </button>
+
+    </div>
+
+    <div
+        fxFlex
+        fxLayout="row"
+        fxLayoutAlign="end center"
+        fxLayoutAlign.gt-sm="space-between center" >
+
+        <div>
+
+            <span
+                class="selected-contacts-count"   >
+
+                <span class="mr-4">
+
+                    {{selected.length}}
+
+                </span>
+
+                <span>
+
+                    selected
+
+                </span>
+
+            </span>
+
+            <button
+                mat-icon-button
+                [matMenuTriggerFor]="selectMenu"    >
+
+                <mat-icon>
+
+                    arrow_drop_down
+
+                </mat-icon>
+
+            </button>
+
+            <mat-menu
+                #selectMenu="matMenu">
+
+                <button
+                    mat-menu-item
+                    (click)="onAll()"   >
+
+                    Select all
+
+                </button>
+
+                <button
+                    mat-menu-item
+                    (click)="onOff()" >
+
+                    Deselect all
+
+                </button>
+
+            </mat-menu>
+
+        </div>
+
+        <div
+            class="multi-select-actions"    >
+
+            <button
+                mat-icon-button
+                (click)="onDel()"
+                aria-label="delete selected"    >
+
+                <mat-icon>
+
+                    delete
+
+                </mat-icon>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

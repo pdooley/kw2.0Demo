@@ -1,0 +1,39 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/formDlg/content/grp/fld/slct/kwUiFldSlct.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<div
+    fxLayout="row"
+    fxLayoutAlign="start start" >
+
+    <mat-form-field>
+
+        <mat-select
+            [placeholder]="sText"
+            [(value)]="data"
+            (selectionChange)="onChanged($event)" >
+
+            <mat-option
+                *ngFor="let opt of opts"
+                [value]="opt.id"    >
+
+                {{opt.data.name}}
+
+            </mat-option>
+
+        </mat-select>
+
+    </mat-form-field>
+
+</div>

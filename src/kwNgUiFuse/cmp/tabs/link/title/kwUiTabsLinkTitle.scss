@@ -1,0 +1,19 @@
+.default {
+  font-family: GothamRounded-Light;
+
+    .title {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: GothamRounded-Light;
+        color: var(--charcoal-grey-two);
+        width: 196px;
+    }
+
+    .subTitle {
+        font-size: 9.7px;
+        margin: 0;
+        font-family: GothamRounded;
+        font-weight: 300;
+        color: var(--ocean-blue);
+    }
+}

@@ -1,0 +1,55 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/list/kwUiList.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<mat-table
+       #table
+       [dataSource]="data"
+       [@animateStagger]="{value:'50'}"    >
+
+    <kw-ui-list-col
+        *ngFor="let col of cols"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="col"  >
+
+    </kw-ui-list-col>
+
+    <mat-header-row
+        *matHeaderRowDef="columnsToDisplay" >
+
+    </mat-header-row>
+
+    <mat-row
+        *matRowDef="let data; columns: columnsToDisplay"
+        class="contact"
+        (click)="{'accent-50':checkboxes[data.id]}"
+        matRipple
+        [@animate]="{value:'*',params:{y:'100%'}}"  >
+
+    </mat-row>
+
+
+    <kw-ui-list-row
+        *ngIf="row"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="view"  >
+
+    </kw-ui-list-row>
+
+</mat-table>
+

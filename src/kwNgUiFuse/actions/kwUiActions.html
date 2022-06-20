@@ -1,0 +1,37 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/actions/kwUiActions.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+
+-->
+
+<div
+    mat-dialog-actions
+    class="p-24 pb-0 m-0"
+    fusePerfectScrollbar    >
+
+    <kw-ui-actions-btn
+        *ngFor="let btn of btns"
+        (changed)="onChanged($event)"
+        [dataIn]="data"
+        [initsIn]="inits"
+        [viewIn]="btn"  >
+
+    </kw-ui-actions-btn>
+
+</div>
+
+
+
+
+
+

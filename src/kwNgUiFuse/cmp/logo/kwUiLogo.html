@@ -1,0 +1,26 @@
+<div *ngIf="view"
+     [class]="sStyl">
+
+    <div>{{sComp}}</div>
+
+    <button fxHide.gt-xs
+            type="button"
+            mat-icon-button
+            (click)="drawer.open()">
+
+        <mat-icon>
+            menu
+        </mat-icon>
+
+    </button>
+
+    <mat-icon fxHide
+              fxShow.gt-xs>
+        {{sIcon}}
+    </mat-icon>
+
+    <span fxHide.sm>
+            {{sTitle}}
+    </span>
+
+</div>

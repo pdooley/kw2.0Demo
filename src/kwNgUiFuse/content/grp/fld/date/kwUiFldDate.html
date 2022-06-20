@@ -1,0 +1,45 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/form/fld/date/kwUiFldDate.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<mat-form-field
+    appearance="outline"
+    fxFlex  >
+
+    <mat-label>
+
+        {{sText}}
+
+    </mat-label>
+
+    <input
+        matInput
+        [matDatepicker]="picker"
+        [placeholder]="sText"
+        [formControl]="form"    >
+
+    <mat-datepicker-toggle
+        matSuffix
+        [for]="picker"  >
+
+    </mat-datepicker-toggle>
+
+    <mat-datepicker
+        #picker >
+
+    </mat-datepicker>
+
+
+</mat-form-field>
+

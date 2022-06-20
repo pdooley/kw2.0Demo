@@ -1,0 +1,23 @@
+<div *ngIf="view"
+     [class]="sStyl">
+
+    <div>{{sComp}}</div>
+    {{view.sText}}
+
+    <form [formGroup]="form"
+          (ngSubmit) = "onSubmit()">
+
+
+        <kw-ui-frm-div
+            *ngFor="let chk of chks"
+            (changed)="onChanged($event)"
+            [dataIn]="data"
+            [initsIn]="inits"
+            [viewIn]="chk">
+
+        </kw-ui-frm-div>
+
+    </form>
+
+</div>
+

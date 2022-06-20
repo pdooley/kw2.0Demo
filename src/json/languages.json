@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "active": true,
+      "isocode": "EN",
+      "name": "English",
+      "nativeName": "English"
+    },
+    {
+      "active": true,
+      "isocode": "Fr",
+      "name": "French",
+      "nativeName": "Francais"
+    }
+  ]
+}

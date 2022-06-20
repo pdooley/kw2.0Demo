@@ -1,0 +1,49 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/form/fld/hour/kwUiFldHour.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+<div
+    fxLayout="row"
+    fxLayoutAlign="start start" >
+
+    <mat-form-field
+        appearance="outline"
+        fxFlex  >
+
+        <mat-label>
+
+            {{sText}}
+
+        </mat-label>
+
+        <mat-icon
+            matSuffix
+            class="secondary-text">
+
+            {{sIcon}}
+
+        </mat-icon>
+
+
+        <input
+            [name]="sText"
+            [placeholder]="sText"
+            [value]="data"
+            (input)="onChanged($event.target.value)"
+            [readonly]="bIsReadOnly"
+            matInput
+            required    >
+
+    </mat-form-field>
+
+</div>

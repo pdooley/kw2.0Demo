@@ -1,0 +1,46 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiAgGrid/kwUiAgGrid.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<div>
+
+    <ag-grid-angular
+        #grid
+        style="width: 100%; height: 500px;"
+        class="ag-theme-balham"
+
+        [rowData]="data"
+        [columnDefs]="cols"
+        [getRowNodeId]="getRowNodeId"
+        [defaultColDef]="defaultColDef"
+        [enableFilter]="enableFilter"
+        [enableSorting]="enableSorting"
+        [rowSelection]="rowSelection"
+        [suppressRowClickSelection]="suppressRowClickSelection"
+
+        rowSelection="multiple"
+        suppressHorizontalScroll
+        suppressClickEdit
+
+        (cellDoubleClicked)="onCellDblClicked($event)"
+        (cellValueChanged)="onCellChanged($event)"
+        (gridReady)="onGridReady($event)"
+        (rowDoubleClicked)="onRowDblClk($event)"
+        (selectionChanged)="onSelChanged($event)" >
+
+    </ag-grid-angular>
+
+</div>
+
+<!--    (gridSizeChanged)="onGridSizeChanged($event)" -->

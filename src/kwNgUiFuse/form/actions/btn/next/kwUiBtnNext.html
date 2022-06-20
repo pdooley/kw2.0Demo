@@ -1,0 +1,26 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/form/btn/next/kwUiBtnNext.ts
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<button
+    *ngIf="del"
+    mat-button
+    class="mr-8"
+    (click)="dlgRef.close(['delete',contactFld])"
+    aria-label="Delete"
+    matTooltip="Delete">
+
+    DELETE
+
+</button>

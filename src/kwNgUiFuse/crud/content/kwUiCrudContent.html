@@ -1,0 +1,34 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/crud/content/kwUiCrudContent.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+
+<kw-ui-side-bar
+    *ngIf="sideBar"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view"  >
+
+</kw-ui-side-bar>
+
+
+<kw-ui-crud-ctr
+    *ngIf="ctr"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+</kw-ui-crud-ctr>
+

@@ -1,0 +1,20 @@
+/**********************************************************************
+*
+* kwNgUiFuse/cell/kwUiCellDlg.scss
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2017 iTKunst corporation
+*
+**********************************************************************/
+
+@import "src/@fuse/scss/fuse";
+
+.content-wrapper {
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}

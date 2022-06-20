@@ -1,0 +1,1149 @@
+{
+  "app": {
+    "sMode": "debug",
+    "sRedirect": "http://www.itkunst.com",
+    "bAutoLogin": true
+  },
+  "trace": {
+    "bApp": false,
+    "bBs": false,
+    "bLoad": false,
+    "bPubSub": false,
+    "bRoutes": false,
+    "bState": false,
+    "bUi": false
+  },
+  "credentials": {
+    "sUserName": "pjldooley@gmail.com",
+    "sPassword": "1234567890"
+  },
+  "routes": {
+    "sLogin": "pages/auth/login",
+    "sLogout": "pages/auth/logout",
+    "sMain": "dw/crud/timeSheetReasons",
+    "sRegister": "pages/auth/register",
+    "sReset": "pages/auth/forgot-password"
+  },
+  "display": {
+    "bDispAll": false,
+    "bDispData": false,
+    "bDispDataFltr": false,
+    "bDispFltr": true,
+    "bDispId": false,
+    "bDispInits": false,
+    "bDispMaster": false,
+    "bDispTag": false,
+    "bDispView": false
+  },
+  "attrs": [
+    {
+      "sName": "Arry",
+      "bDispAll": false,
+      "bDispId": false,
+      "bDispIdD": false,
+      "bDispVal": false,
+      "bDispTmpl": false
+    },
+    {
+      "sName": "Fltr",
+      "bDispAll": false,
+      "bDispId": false,
+      "bDispIdD": false,
+      "bDispVal": false,
+      "bDispTmpl": false
+    },
+    {
+      "sName": "Id",
+      "bDispAll": false,
+      "bDispId": false,
+      "bDispIdD": false,
+      "bDispVal": false,
+      "bDispTmpl": false
+    },
+    {
+      "sName": "Link",
+      "bDispAll": false,
+      "bDispId": false,
+      "bDispIdD": false,
+      "bDispVal": false,
+      "bDispTmpl": false
+    },
+    {
+      "sName": "Rec",
+      "bDispAll": false,
+      "bDispId": false,
+      "bDispIdD": false,
+      "bDispVal": false,
+      "bDispTmpl": false
+    },
+    {
+      "sName": "Styl",
+      "bDispAll": false,
+      "bDispId": false,
+      "bDispIdD": false,
+      "bDispVal": false,
+      "bDispTmpl": false
+    },
+    {
+      "sName": "Text",
+      "bDispAll": true,
+      "bDispId": true,
+      "bDispIdD": true,
+      "bDispVal": true,
+      "bDispTmpl": false
+    }
+  ],
+  "aws": {
+    "bucket": "dealwip",
+    "accessKey": "AKIAIORA26AL37IARCFA",
+    "secretKey": "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",
+    "region": "us-east-1",
+    "folder": "jsa-s3",
+    "serverEncryption": "AES256"
+  },
+  "services": [
+    {
+      "nId": 0,
+      "sCode": "meta",
+      "sHost": "assets/meta",
+      "nPort": null,
+      "sProtocol": "json"
+    },
+    {
+      "nId": 1,
+      "sCode": "data",
+      "sHost": "assets/data",
+      "nPort": null,
+      "sProtocol": "json"
+    },
+    {
+      "nId": 2,
+      "sCode": "assets",
+      "sHost": "assets",
+      "nPort": null,
+      "sProtocol": "json"
+    },
+    {
+      "nId": 3,
+      "sCode": "local",
+      "sHost": "localhost",
+      "nPort": 4200,
+      "sProtocol": "http"
+    },
+    {
+      "nId": 4,
+      "sCode": "firebase",
+      "sHost": null,
+      "nPort": null,
+      "sProtocol": "firebase"
+    }
+  ],
+  "tokens": [
+    {
+      "nId": 0,
+      "sCode": "null",
+      "sVal": "null"
+    },
+    {
+      "nId": 1,
+      "sCode": "auth0",
+      "sVal": ""
+    },
+    {
+      "nId": 2,
+      "sCode": "org",
+      "sVal": ""
+    }
+  ],
+  "apis": [
+    {
+      "sId": "api",
+      "sMode": "live",
+      "actions": {
+        "delete": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api[0]",
+            "sToken": "null"
+          }
+        },
+        "get": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "api.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "api.json",
+            "sToken": "null"
+          }
+        },
+        "patch": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "apis",
+      "sMode": "debug",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "account-management/bootstrap",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "apis.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "curr",
+      "sMode": "debug",
+      "actions": {
+        "delete": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "account-management/accounts/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/accounts[0]",
+            "sToken": "null"
+          }
+        },
+        "get": {
+          "live": {
+            "sService": "data",
+            "sTemplate": "curr.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "data",
+            "sTemplate": "curr.json",
+            "sToken": "null"
+          }
+        },
+        "patch": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "account-management/accounts/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/accounts",
+            "sToken": "null"
+          }
+        },
+        "post": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "account-management/accounts",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/accounts",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "currs",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "data",
+            "sTemplate": "currs.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "data",
+            "sTemplate": "currs.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "currsMax",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "currMax.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "/currMax.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "custom",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "currMax.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "/currMax.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "init",
+      "sMode": "live",
+      "actions": {
+        "delete": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/init/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/init/[0]",
+            "sToken": "null"
+          }
+        },
+        "get": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/init/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/init/[0]",
+            "sToken": "null"
+          }
+        },
+        "patch": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/init",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/init",
+            "sToken": "null"
+          }
+        },
+        "post": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/init",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/init",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "inits",
+      "sMode": "debug",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "inits.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "inits.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "lang",
+      "sMode": "debug",
+      "actions": {
+        "delete": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/lang[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/lang[0]",
+            "sToken": "null"
+          }
+        },
+        "get": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/lang/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "lang.json",
+            "sToken": "null"
+          }
+        },
+        "patch": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/lang",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/lang",
+            "sToken": "null"
+          }
+        },
+        "post": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/lang",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/lang",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "langs",
+      "sMode": "debug",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "data",
+            "sTemplate": "langs.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "data",
+            "sTemplate": "langs.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "langsMax",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "currMax.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "currMax.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "mdl",
+      "sMode": "live",
+      "actions": {
+        "delete": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/mdl[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/mdl[0]",
+            "sToken": "null"
+          }
+        },
+        "get": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/mdlv/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/mdl/[0]",
+            "sToken": "null"
+          }
+        },
+        "patch": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/mdlv",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/mdlv",
+            "sToken": "null"
+          }
+        },
+        "post": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/mdlv",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/mdlv",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "mdls",
+      "sMode": "debug",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "models.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "models.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "signin",
+      "sMode": "live",
+      "actions": {
+        "post": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "authentication/signin",
+            "sToken": "org"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "authentication/signin",
+            "sToken": "org"
+          }
+        }
+      }
+    },
+    {
+      "sId": "srvc",
+      "sMode": "live",
+      "actions": {
+        "get": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "atz.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "timeZone",
+      "sMode": "live",
+      "actions": {
+        "get": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "timeZones",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "data",
+            "sTemplate": "tZs.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "data",
+            "sTemplate": "tZs.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "timeZonesMax",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "token",
+      "sMode": "live",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "tz.json",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "view",
+      "sMode": "live",
+      "actions": {
+        "delete": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/view[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/view[0]",
+            "sToken": "null"
+          }
+        },
+        "get": {
+          "live": {
+            "sService": "local",
+            "sTemplate": "api/view/[0]",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/view/[0]",
+            "sToken": "null"
+          }
+        },
+        "patch": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/view",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/view",
+            "sToken": "null"
+          }
+        },
+        "post": {
+          "live": {
+            "sService": "firebase",
+            "sTemplate": "api/view",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "local",
+            "sTemplate": "api/view",
+            "sToken": "null"
+          }
+        }
+      }
+    },
+    {
+      "sId": "views",
+      "sMode": "debug",
+      "actions": {
+        "all": {
+          "live": {
+            "sService": "meta",
+            "sTemplate": "views.json",
+            "sToken": "null"
+          },
+          "debug": {
+            "sService": "meta",
+            "sTemplate": "views.json",
+            "sToken": "null"
+          }
+        }
+      }
+    }
+  ],
+  "mdls": [
+    {
+      "sId": "curr",
+      "sType": "sub",
+      "params": [
+        {
+          "default": null,
+          "bIsRequired": false,
+          "bIsVisible": true,
+          "sNameExt": "nId",
+          "sNameInt": "nId",
+          "nPosition": 1,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Id"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sCode",
+          "sNameInt": "sCode",
+          "nPosition": 2,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Code"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "nDecimalDigits",
+          "sNameInt": "nDecimalDigits",
+          "nPosition": 3,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Decimal Digits"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sName",
+          "sNameInt": "sName",
+          "nPosition": 4,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sNamePlural",
+          "sNameInt": "sNamePlural",
+          "nPosition": 5,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name Plural"
+        },
+        {
+          "default": 0,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameInt": "sSymbol",
+          "sNameExt": "sSymbol",
+          "nPosition": 6,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Symbol"
+        },
+        {
+          "default": "en",
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameInt": "nRounding",
+          "sNameExt": "nRounding",
+          "nPosition": 7,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Rounding"
+        }
+      ]
+    },
+    {
+      "sId": "lang",
+      "sType": "sub",
+      "params": [
+        {
+          "default": null,
+          "bIsRequired": false,
+          "bIsVisible": true,
+          "sNameExt": "nId",
+          "sNameInt": "nId",
+          "nPosition": 1,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Id"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sCode",
+          "sNameInt": "sCode",
+          "nPosition": 2,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Code"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sName",
+          "sNameInt": "sName",
+          "nPosition": 3,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sNative",
+          "sNameInt": "sNative",
+          "nPosition": 4,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Native"
+        }
+      ]
+    },
+    {
+      "sId": "mdl",
+      "sType": "sub",
+      "params": [
+        {
+          "default": null,
+          "bIsRequired": false,
+          "bIsVisible": true,
+          "sNameExt": "nId",
+          "sNameInt": "nId",
+          "nPosition": 1,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Id"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sCode",
+          "sNameInt": "sCode",
+          "nPosition": 2,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Code"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "nDecimalDigits",
+          "sNameInt": "nDecimalDigits",
+          "nPosition": 3,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Decimal Digits"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sName",
+          "sNameInt": "sName",
+          "nPosition": 4,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sNamePlural",
+          "sNameInt": "sNamePlural",
+          "nPosition": 5,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name Plural"
+        },
+        {
+          "default": 0,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameInt": "sSymbol",
+          "sNameExt": "sSymbol",
+          "nPosition": 6,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Symbol"
+        },
+        {
+          "default": "en",
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameInt": "nRounding",
+          "sNameExt": "nRounding",
+          "nPosition": 7,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Rounding"
+        }
+      ]
+    },
+    {
+      "sId": "signin",
+      "sType": "sub",
+      "params": [
+        {
+          "default": 0,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "email",
+          "sNameInt": "sUsername",
+          "nPosition": 0,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Email"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "password",
+          "sNameInt": "sPassword",
+          "nPosition": 1,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Password"
+        }
+      ]
+    },
+    {
+      "sId": "srvc",
+      "sType": "sub",
+      "params": [
+        {
+          "default": null,
+          "bIsRequired": false,
+          "bIsVisible": true,
+          "sNameExt": "nId",
+          "sNameInt": "nId",
+          "nPosition": 1,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Id"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sCode",
+          "sNameInt": "sCode",
+          "nPosition": 2,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Code"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "nDecimalDigits",
+          "sNameInt": "nDecimalDigits",
+          "nPosition": 3,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Decimal Digits"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sName",
+          "sNameInt": "sName",
+          "nPosition": 4,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sNamePlural",
+          "sNameInt": "sNamePlural",
+          "nPosition": 5,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name Plural"
+        },
+        {
+          "default": 0,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameInt": "sSymbol",
+          "sNameExt": "sSymbol",
+          "nPosition": 6,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Symbol"
+        },
+        {
+          "default": "en",
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameInt": "nRounding",
+          "sNameExt": "nRounding",
+          "nPosition": 7,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Rounding"
+        }
+      ]
+    },
+    {
+      "sId": "timeZone",
+      "sType": "sub",
+      "params": [
+        {
+          "default": null,
+          "bIsRequired": false,
+          "bIsVisible": true,
+          "sNameExt": "nId",
+          "sNameInt": "nId",
+          "nPosition": 1,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Id"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sCode",
+          "sNameInt": "sCode",
+          "nPosition": 2,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Code"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sName",
+          "sNameInt": "sName",
+          "nPosition": 3,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name"
+        }
+      ]
+    },
+    {
+      "sId": "token",
+      "sType": "sub",
+      "params": [
+        {
+          "default": null,
+          "bIsRequired": false,
+          "bIsVisible": true,
+          "sNameExt": "nId",
+          "sNameInt": "nId",
+          "nPosition": 1,
+          "sSrvcIn": "num",
+          "sSrvcOut": "num",
+          "sTitle": "Id"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sCode",
+          "sNameInt": "sCode",
+          "nPosition": 2,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Code"
+        },
+        {
+          "default": null,
+          "bIsRequired": true,
+          "bIsVisible": true,
+          "sNameExt": "sName",
+          "sNameInt": "sName",
+          "nPosition": 3,
+          "sSrvcIn": "str",
+          "sSrvcOut": "str",
+          "sTitle": "Name"
+        }
+      ]
+    }
+  ]
+}

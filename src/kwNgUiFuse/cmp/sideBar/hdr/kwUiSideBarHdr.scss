@@ -1,0 +1,21 @@
+/**********************************************************************
+*
+* kwNgUiFuse/cmp/sideBar/kwUiSideBar.scss
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+@import "src/@fuse/scss/fuse";
+
+
+> .header
+{
+  flex: 0 1 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+

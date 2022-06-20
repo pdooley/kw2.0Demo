@@ -1,0 +1,30 @@
+<!--
+/**********************************************************************
+*
+* kwNgUiFuse/crud/ctr/kwUiCrudCtr.html
+*
+* author: Patrick Dooley
+*
+*
+**********************************************************************
+*
+* Copyright (c) 2018 iTKunst corporation
+*
+**********************************************************************/
+-->
+
+<kw-ui-ag-grid
+    *ngIf="agGrid"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+</kw-ui-ag-grid>
+
+<kw-ui-list
+    *ngIf="list"
+    (changed)="onChanged($event)"
+    [dataIn]="data"
+    [initsIn]="inits"
+    [viewIn]="view">
+</kw-ui-list>
