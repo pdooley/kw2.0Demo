@@ -2,16 +2,16 @@
   "app": {
     "sMode": "debug",
     "sRedirect": "http://www.itkunst.com",
-    "bAutoLogin": true
+    "bAutoLogin": false
   },
   "trace": {
-    "bApp": false,
-    "bBs": false,
-    "bLoad": false,
-    "bPubSub": false,
-    "bRoutes": false,
-    "bState": false,
-    "bUi": false
+    "bApp": true,
+    "bBs": true,
+    "bLoad": true,
+    "bPubSub": true,
+    "bRoutes": true,
+    "bState": true,
+    "bUi": true
   },
   "credentials": {
     "sUserName": "pjldooley@gmail.com",

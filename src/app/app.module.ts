@@ -60,6 +60,7 @@ import {dwCoreMod}                  from '@dwCore/dwCoreMod';
 import {dwPageMod}                  from '@dwPage/dwPageMod';
 import {dwStateMod}                 from '@dwState/dwStateMod';
 
+import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
 
 const appRoutes: Routes = [
     {
@@ -116,6 +117,11 @@ const appRoutes: Routes = [
         appRoutes,
         {
             enableTracing: false
+      }),
+      LoggerModule.forRoot({
+        serverLoggingUrl: '/api/logs',
+        level: NgxLoggerLevel.DEBUG,
+        serverLogLevel: NgxLoggerLevel.ERROR
       }),
       EffectsModule.forRoot([AppEffects]),
       StoreRouterConnectingModule.forRoot(),
@@ -174,6 +180,6 @@ export class AppModule
     constructor(injector: Injector)
     {
         setAppInjector(injector);
-        //console.log('appModule::constructor() called.');
+        console.log('appModule::constructor() called.');
     }
 }
