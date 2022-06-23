@@ -89,14 +89,14 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
         private zone:           NgZone    )
     {
         const log: kwLog = new kwLog(this.sClass, "constructor");
-        //console.log(log.called());
+        console.log(log.called());
     }
 
 
     ngOnInit(): void
     {
         const log: kwLog = new kwLog(this.sClass, "ngOnInit");
-        //console.log(log.called());
+        console.log(log.called());
 
         this.subInit();
     }
@@ -105,7 +105,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     ngOnDestroy()
     {
         const log: kwLog = new kwLog(this.sClass, "ngOnDestroy");
-        //console.log(log.called());
+        console.log(log.called());
 
         this.unSubConnect();
     }
@@ -114,7 +114,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     protected load(src: kwStVal): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "load");
-        //console.log(log.called());
+        console.log(log.called());
         return true;
     }
 
@@ -122,7 +122,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private inspectLogin(app: kwStatusApp) : void
     {
         const log: kwLog = new kwLog(this.sClass, "inspectLogin");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (kw.isNull(app))
         {
@@ -207,7 +207,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     inspectUser(user: kwBsUserStArr)
     {
         const log: kwLog = new kwLog(this.sClass, "inspectUser");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (kw.isNull(user))
         {
@@ -221,7 +221,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
         //{
         //    if (this.srvcTrace.get())
         //    {
-        //        //console.info(this.sClass, "::inspectUser() org not yet loaded - doing nothing.");
+        //        console.info(this.sClass, "::inspectUser() org not yet loaded - doing nothing.");
         //    }
         //    return;
         //}
@@ -241,12 +241,12 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     protected loadBootstrap(info: any): void
     {
         const log: kwLog = new kwLog(this.sClass, "loadBootstrap");
-        //console.log(log.called());
+        console.log(log.called());
 
 
         if (kw.isNull(info))
         {
-            //console.info(log.info("[info] is not set - remaining in App Bootstrap phase."));
+            console.info(log.info("[info] is not set - remaining in App Bootstrap phase."));
             return;
         }
 
@@ -302,7 +302,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     loadInit(info: kwStatusBs) : void
     {
         const log: kwLog = new kwLog(this.sClass, "loadInit");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (!kw.isValid(info))
         {
@@ -334,7 +334,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     retrieveRoutes(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "retrieveRoutes");
-        //console.log(log.called());
+        console.log(log.called());
 
         const routes = this.srvcRoutes.get();
         if (kw.isNull(routes))
@@ -373,7 +373,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private subBootstrap()
     {
         const log: kwLog = new kwLog(this.sClass, "subBootstrap");
-        //console.log(log.called());
+        console.log(log.called());
 
         this._unSubApis         = new Subject();
         this._unSubMdls         = new Subject();
@@ -404,7 +404,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private subInit()
     {
         const log: kwLog = new kwLog(this.sClass, "subInit");
-        //console.log(log.called());
+        console.log(log.called());
 
         this._unSubStatBs    = new Subject();
 
@@ -419,7 +419,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private subLogin()
     {
         const log: kwLog = new kwLog(this.sClass, "subLogin");
-        //console.log(log.called());
+        console.log(log.called());
 
         this._unSubStatApp = new Subject();
 
@@ -435,7 +435,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private subUser()
     {
         const log: kwLog = new kwLog(this.sClass, "subUser");
-        //console.log(log.called());
+        console.log(log.called());
 
         this._unSubUser         = new Subject();
 
@@ -450,7 +450,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private unSubBootstrap(): void
     {
         const log: kwLog = new kwLog(this.sClass, "unSubBootstrap");
-        //console.log(log.called());
+        console.log(log.called());
 
 
         if (kw.isValid(this._unSubApis)) {
@@ -475,7 +475,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private unSubConnect(): void
     {
         const log: kwLog = new kwLog(this.sClass, "unSubBConnect");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (kw.isValid(this._unSubLogin)) {
             this._unSubLogin.next();
@@ -502,7 +502,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
     private unSubInit(): void
     {
         const log: kwLog = new kwLog(this.sClass, "unSubInit");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (kw.isValid(this._unSubStatBs))
         {

@@ -49,8 +49,8 @@ export abstract class kwNgUiCtrlPageMsgAll  extends kwUiCtrlPageMsgAll
             srvcData,
             srvcFcty,
             srvcMsg     );
-        const log: kwLog = new kwLog(this.sClass, "onChanged");
-        //console.log(log.called());
+        const log: kwLog = new kwLog(this.sClass, "constructor");
+        console.log(log.called());
     }
 
 
@@ -59,7 +59,7 @@ export abstract class kwNgUiCtrlPageMsgAll  extends kwUiCtrlPageMsgAll
     ngOnInit(): void
     {
         const log: kwLog = new kwLog(this.sClass, "ngOnInit");
-        //console.log(log.called());
+        console.log(log.called());
 
         //calling base class init();
         this.init();
@@ -68,7 +68,7 @@ export abstract class kwNgUiCtrlPageMsgAll  extends kwUiCtrlPageMsgAll
     ngOnDestroy(): void
     {
         const log: kwLog = new kwLog(this.sClass, "ngOnDestroy");
-        //console.log(log.called());
+        console.log(log.called());
 
        this.destroy();
     }

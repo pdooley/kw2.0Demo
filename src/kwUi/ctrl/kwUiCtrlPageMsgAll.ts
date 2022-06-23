@@ -45,7 +45,7 @@ export abstract class kwUiCtrlPageMsgAll extends kwUiCtrlPageMsg
             srvcMsg );
 
         const log: kwLog = new kwLog(this.sClass, "constructor");
-        //console.log(log.called());
+        console.log(log.called());
     }
 
 
@@ -55,7 +55,7 @@ export abstract class kwUiCtrlPageMsgAll extends kwUiCtrlPageMsg
     protected init(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "initPage");
-        //console.log(log.called());
+        console.log(log.called());
 
         return super.init();
     }
@@ -64,7 +64,7 @@ export abstract class kwUiCtrlPageMsgAll extends kwUiCtrlPageMsg
     protected subscribeFltr(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "subscribeFltr");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bSubFltr)
         {
@@ -82,7 +82,7 @@ export abstract class kwUiCtrlPageMsgAll extends kwUiCtrlPageMsg
     protected unSubscribeFltr(): void
     {
         const log: kwLog = new kwLog(this.sClass, "unSubscribeFltr");
-        //console.log(log.called());
+        console.log(log.called());
     }
 
 

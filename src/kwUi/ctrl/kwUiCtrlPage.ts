@@ -69,7 +69,7 @@ export abstract class kwUiCtrlPage
         private srvcView: kwUiStView    )
     {
         const log: kwLog = new kwLog(this.sClass, "constructor");
-        //console.log(log.called());
+        console.log(log.called());
     }
 
 
@@ -121,7 +121,7 @@ export abstract class kwUiCtrlPage
     protected init(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "init");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bInit)
         {
@@ -161,7 +161,7 @@ export abstract class kwUiCtrlPage
 
         if (!this.loadAttrs())
         {
-            //console.info(log.errLoad("attrs"));
+            console.info(log.errLoad("attrs"));
             return;
         }
 
@@ -199,7 +199,7 @@ export abstract class kwUiCtrlPage
     protected destroy(): void
     {
         const log: kwLog = new kwLog(this.sClass, "destroy");
-        //console.log(log.called());
+        console.log(log.called());
 
         this.unSubscribeData();
     }
@@ -208,7 +208,7 @@ export abstract class kwUiCtrlPage
     private createElmt(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "createElmt");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bCreateElmt)
         {
@@ -218,10 +218,10 @@ export abstract class kwUiCtrlPage
 
         if (kw.isNull(this.attrs))
         {
-            //console.info(log.empty("attrs"));
+            console.info(log.empty("attrs"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
 
         if (kw.isNull(this.disp))
@@ -229,15 +229,15 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("disp"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
 
         if (kw.isNull(this.initsIn))
         {
-            //console.info(log.empty("initsIn"));
+            console.info(log.empty("initsIn"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
 
         if (!kw.isString(this.sTag))
@@ -245,15 +245,15 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("sTag"));
             return false;
         }
-        //console.info(log.is("sTag", this.sTag));
+        console.info(log.is("sTag", this.sTag));
 
 
         if (kw.isNull(this.viewIn))
         {
-            //console.info(log.empty("viewIn"));
+            console.info(log.empty("viewIn"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
 
         const type: kwtElmt = {
@@ -271,7 +271,7 @@ export abstract class kwUiCtrlPage
             console.error(log.errCreate("elmt"));
             return false;
         }
-        //console.info(log.isObj("elmt"), elmt);
+        console.info(log.isObj("elmt"), elmt);
         this.elmt = elmt;
 
         this.bCreateElmt = true;
@@ -286,21 +286,21 @@ export abstract class kwUiCtrlPage
     protected handleEvent($event)
     {
         const log: kwLog = new kwLog(this.sClass, "handleEvent");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (!kw.isValid($event))
         {
             console.error(log.invalid("$event"));
             return;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
         //const sDataId: string = this.getDataId();
 
         const sLink: string = this.sLink;
         if (kw.isString(sLink))
         {
-            //console.info(log.is("sLink", sLink));
+            console.info(log.is("sLink", sLink));
 
             this.navigate(sLink);
             return;
@@ -308,7 +308,7 @@ export abstract class kwUiCtrlPage
 
         const event = {};
 
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
         this.publish(event);
     }
 
@@ -318,7 +318,7 @@ export abstract class kwUiCtrlPage
     private loadAttrs(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "loadAttrs");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bLoadAttrs)
         {
@@ -331,7 +331,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("srvcAttrs"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
 
         const attrs = <kwAttr[]> this.srvcAttrs.get();
@@ -340,7 +340,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("attrs"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
         this.attrs = attrs;
 
 
@@ -353,7 +353,7 @@ export abstract class kwUiCtrlPage
     private loadDisp(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "loadDisp");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bLoadDisp)
         {
@@ -368,7 +368,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("disp"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
 
         this.disp = disp;
@@ -380,7 +380,7 @@ export abstract class kwUiCtrlPage
     private loadInits(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "loadInits");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bLoadInits)
         {
@@ -395,7 +395,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("srvcInit"));
             return false;
         }
-        //console.info(log.isObj("srvcAttrs"), this.attrs);
+        console.info(log.isObj("srvcAttrs"), this.attrs);
 
         const initsIn = srvcInit.get();
         if (!kw.isValid(initsIn))
@@ -403,7 +403,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("initsIn"));
             return false;
         }
-        //console.info(log.isObj("initsIn"), initsIn);
+        console.info(log.isObj("initsIn"), initsIn);
         this.initsIn = initsIn;
 
 
@@ -416,7 +416,7 @@ export abstract class kwUiCtrlPage
     private loadView(): boolean
     {
         const log: kwLog = new kwLog(this.sClass, "loadView");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (this.bLoadView)
         {
@@ -428,7 +428,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("srvcView"));
             return false;
         }
-        //console.info(log.isObj("srvcView"), this.srvcView);
+        console.info(log.isObj("srvcView"), this.srvcView);
 
         const viewIn = this.srvcView.get();
         if (!kw.isValid(viewIn))
@@ -436,7 +436,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("viewIn"));
             return false;
         }
-        //console.info(log.isObj("viewIn"), viewIn);
+        console.info(log.isObj("viewIn"), viewIn);
         this.viewIn = viewIn;
 
 
@@ -449,13 +449,13 @@ export abstract class kwUiCtrlPage
     protected updateElmt(data: any): void
     {
         const log: kwLog = new kwLog(this.sClass, "updateElmt");
-        //console.log(log.called());
+        console.log(log.called());
 
-        //console.info(log.isObj("data"), data, "]");
+        console.info(log.isObj("data"), data, "]");
 
         if (!this.bCreateElmt)
         {
-            //console.info(log.empty("elmt"));
+            console.info(log.empty("elmt"));
             this.kwData = data;
             return;
         }
@@ -465,7 +465,7 @@ export abstract class kwUiCtrlPage
             console.error(log.invalid("elmt"));
             return;
         }
-        //console.info(log.isObj("elmt"), this.elmt);
+        console.info(log.isObj("elmt"), this.elmt);
 
         this.elmt.loadData(data);
 
