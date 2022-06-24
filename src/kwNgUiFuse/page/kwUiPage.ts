@@ -40,7 +40,7 @@ export class kwUiPage extends kwNgUiCtrlComp {
     {
         super(sTAG);
         const log = new kwLog(this.sClass, "constructor");
-        //console.info(log.called());
+        console.info(log.called());
     }
 
 
@@ -93,21 +93,21 @@ export class kwUiPage extends kwNgUiCtrlComp {
 
         const ftr = type.ftr;
         if (kw.isValid(ftr)) {
-            //console.info(this.sClass, "::parseView() ftr is [", ftr, "]");
+            console.info(this.sClass, "::parseView() ftr is [", ftr, "]");
             this.ftr = ftr;
         }
 
 
         const hdr = type.hdr;
         if (kw.isValid(hdr)) {
-            //console.info(this.sClass, "::parseView() hdr is [", hdr, "]");
+            console.info(this.sClass, "::parseView() hdr is [", hdr, "]");
             this.hdr = hdr;
         }
 
 
         const util = type.util;
         if (kw.isValid(util)) {
-            //console.info(this.sClass, "::parseView() util is [", util, "]");
+            console.info(this.sClass, "::parseView() util is [", util, "]");
             this.util = util;
         }
 

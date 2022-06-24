@@ -161,7 +161,7 @@ export class kwFbSrvcAuth
            console.error(log.errCreate("error"))
            return;
         }
-        //console.info(log.isObj("error"), error);
+        console.info(log.isObj("error"), error);
 
         this.srvcErr.val = error;
     }

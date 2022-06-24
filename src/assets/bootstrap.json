@@ -6,7 +6,7 @@
   },
   "trace": {
     "bApp": true,
-    "bBs": false,
+    "bBs": true,
     "bLoad": false,
     "bPubSub": false,
     "bRoutes": false,
@@ -14,7 +14,7 @@
     "bUi": false
   },
   "credentials": {
-    "sUserName": "pjldooley@gmail.com",
+    "sUserName": "pdooley@itkunst.com",
     "sPassword": "abc123"
   },
   "routes": {

@@ -131,7 +131,7 @@ export class LoginComponent implements OnInit
     onLogin(): void
     {
         const log: kwLog = new kwLog(this.sClass, "onLogin");
-        //console.log(log.called());
+        console.log(log.called());
 
         if (kw.isNull(this.loginForm))
         {
