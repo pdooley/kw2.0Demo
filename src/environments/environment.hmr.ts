@@ -2,12 +2,11 @@ export const environment = {
     production: false,
     hmr       : true,
     firebase  : {
-        apiKey: "AIzaSyCOoL-_zWwEumISOvzila5lZ2RHaNWlnz0",
-        authDomain: "fir-3a130.firebaseapp.com",
-        projectId: "fir-3a130",
-        storageBucket: "fir-3a130.appspot.com",
-        messagingSenderId: "58248318870",
-        appId: "1:58248318870:web:f31c589891a95d23f617b7",
-        measurementId: "G-91KMQNCFWM"
-    }
+        apiKey: "AIzaSyBDki01XPbo8OvLGzYqm9C4iJ1dRBplq3g",
+        authDomain: "kwdemo-8f69c.firebaseapp.com",
+        projectId: "kwdemo-8f69c",
+        storageBucket: "kwdemo-8f69c.appspot.com",
+        messagingSenderId: "870054033678",
+        appId: "1:870054033678:web:55e09549bcb78a5e33bf5f"       
+   }
 };

@@ -74,7 +74,7 @@ export class kwFbUserCtrlVal implements OnInit, OnDestroy
         this._unsubscribeAll.complete();
     }
 
-    private inspect(info: kwFbSignin): void
+    private inspect(info: any): void
     {
         const log: kwLog = new kwLog(this.sClass, "inspect");
         //console.log(log.called());
@@ -88,7 +88,7 @@ export class kwFbUserCtrlVal implements OnInit, OnDestroy
         }
         //console.info(log.isObj("info"), info);
 
-        const user : kwFbUser = info.getUser();
+        const user : kwFbUser = info.user;
         if (kw.isNull(user))
         {
             console.error(log.invalid("user"));

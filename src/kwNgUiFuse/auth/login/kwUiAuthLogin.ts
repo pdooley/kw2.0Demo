@@ -38,6 +38,7 @@ export class kwUiAuthLogin implements OnInit {
     constructor(
         private formBuilder: FormBuilder
     ) {
+        debugger
         this.loginFormErrors = {
             email: {},
             password: {}

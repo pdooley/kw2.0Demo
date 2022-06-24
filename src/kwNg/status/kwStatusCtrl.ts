@@ -30,6 +30,7 @@ import {kwBsUserStArr}          from "@kwBsState/user/kwBsUserSt";
 import {kwLog}                  from "@kw/kwLog";
 import {kwLoginStVal}           from "@kwNgState/login/kwLoginSt";
 import {kwMdlsStObj}            from "@kwNgState/mdls/kwMdlsSt";
+import {kwRoutes}               from "@kwClass/routes/kwRoutes";
 import {kwStatusApp}            from "@kwClass/statusApp/kwStatusApp";
 import {kwStatusAppBootstrap}   from "@kwClass/statusApp/kwStatusAppBootstrap";
 import {kwStatusAppEnum}        from "@kwClass/statusApp/kwStatusAppEnum";
@@ -336,7 +337,7 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
         const log: kwLog = new kwLog(this.sClass, "retrieveRoutes");
         console.log(log.called());
 
-        const routes = this.srvcRoutes.get();
+        const routes: kwRoutes = <kwRoutes>this.srvcRoutes.get();
         if (kw.isNull(routes))
         {
             console.error(log.errLoad("routes"));
@@ -344,7 +345,9 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
         }
         if (this.srvcTrace.bApp){console.info(log.isObj("routes"), routes);}
 
-        const sLogin: string = routes.sLogin;
+
+        //const sLogin: string = routes.sLogin;
+        const sLogin: string = "pages/auth/login";
         if (!kw.isString(sLogin) || sLogin.length === 0)
         {
             console.error(log.invalid("sLogin"));
@@ -355,7 +358,8 @@ export class kwStatusCtrlStat implements OnInit, OnDestroy
         this.sLogin = sLogin;
 
 
-        const sMain: string = routes.sMain;
+        //const sMain: string = routes.sMain;
+        const sMain: string = "dw/crud/timeSheetReasons";
         if (!kw.isString(sMain))
         {
             console.error(log.invalid("sMain"));
