@@ -62,7 +62,7 @@ export class kwFbSrvcAuth
 
     public login(value)
     {
-        debugger
+        //debugger
         const log: kwLog = new kwLog(this.sClass, "login");
         //console.log(log.called());
 
