@@ -55,6 +55,7 @@ import {kwNgUiAgGridMod}            from '@kwNgUiAgGrid/kwNgUiAgGridMod';
 import {kwNgUiFuseMod}              from '@kwNgUiFuse/kwNgUiFuseMod';
 import {kwNgUiMod}                  from '@kwNgUi/kwNgUiMod';
 
+import {dwMod}                      from '@dw/dwMod';
 import {dwCompMod}                  from '@dwComp/dwCompMod';
 import {dwCoreMod}                  from '@dwCore/dwCoreMod';
 import {dwPageMod}                  from '@dwPage/dwPageMod';
