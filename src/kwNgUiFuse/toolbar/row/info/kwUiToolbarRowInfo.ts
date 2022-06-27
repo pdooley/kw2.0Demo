@@ -36,7 +36,7 @@ export class kwUiToolbarRowInfo extends kwNgUiCtrlComp
     public img:     object;
 
     public sSrc:    string  = "";
-    public sText:   string  = "";
+    public sText1:   string  = "";
 
 
     constructor()
